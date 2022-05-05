@@ -1,0 +1,525 @@
+ARM GAS  /tmp/ccFaXYXl.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 27, 1
+   3              		.eabi_attribute 28, 1
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"storage.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.GetPage,"ax",%progbits
+  18              		.align	1
+  19              		.arch armv7e-m
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  23              		.fpu fpv4-sp-d16
+  25              	GetPage:
+  26              	.LVL0:
+  27              	.LFB950:
+  28              		.file 1 "../../lib/storage/storage.c"
+   1:../../lib/storage/storage.c **** #include <stdint.h>
+   2:../../lib/storage/storage.c **** #include <errno.h>
+   3:../../lib/storage/storage.c **** #include "storage.h"
+   4:../../lib/storage/storage.c **** #include "main.h"
+   5:../../lib/storage/storage.c **** // ===================== p1s5 =================== //
+   6:../../lib/storage/storage.c **** 
+   7:../../lib/storage/storage.c **** #define WORD_SIZE_DOUBLE 8
+   8:../../lib/storage/storage.c **** // STM32EB55have 256 PAGES (Page 0 to Page 255) of 4 KB each. This makes up 1Mb Flash Memory //
+   9:../../lib/storage/storage.c **** // FLASH_PAGE_SIZE should be able to get the size of the Page according to the controller //
+  10:../../lib/storage/storage.c **** static uint32_t GetPage(uint32_t Address)
+  11:../../lib/storage/storage.c **** {
+  29              		.loc 1 11 1 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  34              		.loc 1 11 1 is_stmt 0 view .LVU1
+  35 0000 0146     		mov	r1, r0
+  12:../../lib/storage/storage.c ****   for (int indx = 0; indx < 256; indx++)
+  36              		.loc 1 12 3 is_stmt 1 view .LVU2
+  37              	.LBB2:
+  38              		.loc 1 12 8 view .LVU3
+  39              	.LVL1:
+  40              		.loc 1 12 12 is_stmt 0 view .LVU4
+  41 0002 0023     		movs	r3, #0
+  42              		.loc 1 12 3 view .LVU5
+  43 0004 00E0     		b	.L2
+  44              	.LVL2:
+  45              	.L3:
+  46              		.loc 1 12 34 is_stmt 1 discriminator 2 view .LVU6
+ARM GAS  /tmp/ccFaXYXl.s 			page 2
+
+
+  47              		.loc 1 12 38 is_stmt 0 discriminator 2 view .LVU7
+  48 0006 0133     		adds	r3, r3, #1
+  49              	.LVL3:
+  50              	.L2:
+  51              		.loc 1 12 22 is_stmt 1 discriminator 1 view .LVU8
+  52              		.loc 1 12 3 is_stmt 0 discriminator 1 view .LVU9
+  53 0008 FF2B     		cmp	r3, #255
+  54 000a 0CDC     		bgt	.L6
+  13:../../lib/storage/storage.c ****   {
+  14:../../lib/storage/storage.c **** 	  if ((Address < (0x08000000 + (FLASH_PAGE_SIZE *(indx + 1))) ) && (Address >= (0x08000000 + FLASH
+  55              		.loc 1 14 4 is_stmt 1 view .LVU10
+  56              		.loc 1 14 31 is_stmt 0 view .LVU11
+  57 000c 03F50042 		add	r2, r3, #32768
+  58 0010 0132     		adds	r2, r2, #1
+  59              		.loc 1 14 7 view .LVU12
+  60 0012 B1EB023F 		cmp	r1, r2, lsl #12
+  61 0016 F6D2     		bcs	.L3
+  62              		.loc 1 14 93 discriminator 1 view .LVU13
+  63 0018 03F50042 		add	r2, r3, #32768
+  64 001c 1003     		lsls	r0, r2, #12
+  65              		.loc 1 14 66 discriminator 1 view .LVU14
+  66 001e B1EB023F 		cmp	r1, r2, lsl #12
+  67 0022 F0D3     		bcc	.L3
+  68              	.L1:
+  69              		.loc 1 14 66 discriminator 1 view .LVU15
+  70              	.LBE2:
+  15:../../lib/storage/storage.c **** 	  {
+  16:../../lib/storage/storage.c **** 		  return (0x08000000 + FLASH_PAGE_SIZE * indx);
+  17:../../lib/storage/storage.c **** 	  }
+  18:../../lib/storage/storage.c ****   }
+  19:../../lib/storage/storage.c ****   return 0;
+  20:../../lib/storage/storage.c **** }
+  71              		.loc 1 20 1 view .LVU16
+  72 0024 7047     		bx	lr
+  73              	.L6:
+  19:../../lib/storage/storage.c **** }
+  74              		.loc 1 19 10 view .LVU17
+  75 0026 0020     		movs	r0, #0
+  76 0028 FCE7     		b	.L1
+  77              		.cfi_endproc
+  78              	.LFE950:
+  80              		.section	.text.storage_write,"ax",%progbits
+  81              		.align	1
+  82              		.global	storage_write
+  83              		.syntax unified
+  84              		.thumb
+  85              		.thumb_func
+  86              		.fpu fpv4-sp-d16
+  88              	storage_write:
+  89              	.LVL4:
+  90              	.LFB951:
+  21:../../lib/storage/storage.c **** 
+  22:../../lib/storage/storage.c **** int storage_write(uint32_t idx, uint8_t *data, uint32_t len) {
+  91              		.loc 1 22 62 is_stmt 1 view -0
+  92              		.cfi_startproc
+  93              		@ args = 0, pretend = 0, frame = 8
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  /tmp/ccFaXYXl.s 			page 3
+
+
+  95              		.loc 1 22 62 is_stmt 0 view .LVU19
+  96 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+  97              	.LCFI0:
+  98              		.cfi_def_cfa_offset 36
+  99              		.cfi_offset 4, -36
+ 100              		.cfi_offset 5, -32
+ 101              		.cfi_offset 6, -28
+ 102              		.cfi_offset 7, -24
+ 103              		.cfi_offset 8, -20
+ 104              		.cfi_offset 9, -16
+ 105              		.cfi_offset 10, -12
+ 106              		.cfi_offset 11, -8
+ 107              		.cfi_offset 14, -4
+ 108 0004 83B0     		sub	sp, sp, #12
+ 109              	.LCFI1:
+ 110              		.cfi_def_cfa_offset 48
+ 111 0006 0546     		mov	r5, r0
+ 112 0008 0E46     		mov	r6, r1
+ 113 000a 1746     		mov	r7, r2
+  23:../../lib/storage/storage.c ****     // TODO: implement this 
+  24:../../lib/storage/storage.c ****     // ========== p1s5 =========== //
+  25:../../lib/storage/storage.c ****     static FLASH_EraseInitTypeDef EraseInitStruct; // variable for HAL_FLASHEx_Erase(erase position
+ 114              		.loc 1 25 5 is_stmt 1 view .LVU20
+  26:../../lib/storage/storage.c **** 	uint32_t PAGEError; // variable for HAL_FLASHEx_Erase(erase positions to be filled by program) //
+ 115              		.loc 1 26 2 view .LVU21
+  27:../../lib/storage/storage.c **** 	int sofar = 0; // up to which word we have already written //
+ 116              		.loc 1 27 2 view .LVU22
+ 117              	.LVL5:
+  28:../../lib/storage/storage.c **** 	uint64_t dataconcatenated; // HAL_FLASH_Program function needs 8 bytes input  //
+ 118              		.loc 1 28 2 view .LVU23
+  29:../../lib/storage/storage.c **** 	                           // dataconcatenated takes 8 positions of data      //
+  30:../../lib/storage/storage.c **** 							   // concatenates them and it is passed as parameter //
+  31:../../lib/storage/storage.c **** 
+  32:../../lib/storage/storage.c **** 	// Unlock the Flash to enable the flash control register access //
+  33:../../lib/storage/storage.c **** 	HAL_FLASH_Unlock();
+ 119              		.loc 1 33 2 view .LVU24
+ 120 000c FFF7FEFF 		bl	HAL_FLASH_Unlock
+ 121              	.LVL6:
+  34:../../lib/storage/storage.c **** 
+  35:../../lib/storage/storage.c **** 	// Erase the user Flash area //
+  36:../../lib/storage/storage.c **** 	uint16_t numberofwords; 
+ 122              		.loc 1 36 2 view .LVU25
+  37:../../lib/storage/storage.c ****     uint32_t StartPage = GetPage(idx);	// initialize startPage for HAL_FLASH_Program call //
+ 123              		.loc 1 37 5 view .LVU26
+ 124              		.loc 1 37 26 is_stmt 0 view .LVU27
+ 125 0010 2846     		mov	r0, r5
+ 126 0012 FFF7FEFF 		bl	GetPage
+ 127              	.LVL7:
+ 128 0016 0446     		mov	r4, r0
+ 129              	.LVL8:
+  38:../../lib/storage/storage.c ****     uint32_t EndPageAdress = idx + len; // end address to find which page reaches //
+ 130              		.loc 1 38 5 is_stmt 1 view .LVU28
+  39:../../lib/storage/storage.c **** 	uint32_t EndPage = GetPage(EndPageAdress);	// end page //
+ 131              		.loc 1 39 2 view .LVU29
+ 132              		.loc 1 39 21 is_stmt 0 view .LVU30
+ 133 0018 E819     		adds	r0, r5, r7
+ 134              	.LVL9:
+ARM GAS  /tmp/ccFaXYXl.s 			page 4
+
+
+ 135              		.loc 1 39 21 view .LVU31
+ 136 001a FFF7FEFF 		bl	GetPage
+ 137              	.LVL10:
+ 138              		.loc 1 39 21 view .LVU32
+ 139 001e 0346     		mov	r3, r0
+ 140              	.LVL11:
+  40:../../lib/storage/storage.c **** 	int i = 0; // index of each word of data parameter //
+ 141              		.loc 1 40 2 is_stmt 1 view .LVU33
+  41:../../lib/storage/storage.c **** 
+  42:../../lib/storage/storage.c **** 	// Fill EraseInit structure //
+  43:../../lib/storage/storage.c **** 	EraseInitStruct.TypeErase   = FLASH_TYPEERASE_PAGES;
+ 142              		.loc 1 43 2 view .LVU34
+ 143              		.loc 1 43 30 is_stmt 0 view .LVU35
+ 144 0020 2648     		ldr	r0, .L21
+ 145              	.LVL12:
+ 146              		.loc 1 43 30 view .LVU36
+ 147 0022 0222     		movs	r2, #2
+ 148 0024 0260     		str	r2, [r0]
+  44:../../lib/storage/storage.c **** 	EraseInitStruct.Page        = StartPage;
+ 149              		.loc 1 44 2 is_stmt 1 view .LVU37
+ 150              		.loc 1 44 30 is_stmt 0 view .LVU38
+ 151 0026 4460     		str	r4, [r0, #4]
+  45:../../lib/storage/storage.c **** 	EraseInitStruct.NbPages     = ((EndPage - StartPage) / FLASH_PAGE_SIZE) + 1;
+ 152              		.loc 1 45 2 is_stmt 1 view .LVU39
+ 153              		.loc 1 45 42 is_stmt 0 view .LVU40
+ 154 0028 1B1B     		subs	r3, r3, r4
+ 155              	.LVL13:
+ 156              		.loc 1 45 55 view .LVU41
+ 157 002a 1B0B     		lsrs	r3, r3, #12
+ 158              		.loc 1 45 74 view .LVU42
+ 159 002c 0133     		adds	r3, r3, #1
+ 160              		.loc 1 45 30 view .LVU43
+ 161 002e 8360     		str	r3, [r0, #8]
+  46:../../lib/storage/storage.c **** 
+  47:../../lib/storage/storage.c **** 	if (HAL_FLASHEx_Erase(&EraseInitStruct, &PAGEError) != HAL_OK)
+ 162              		.loc 1 47 2 is_stmt 1 view .LVU44
+ 163              		.loc 1 47 6 is_stmt 0 view .LVU45
+ 164 0030 01A9     		add	r1, sp, #4
+ 165 0032 FFF7FEFF 		bl	HAL_FLASHEx_Erase
+ 166              	.LVL14:
+ 167              		.loc 1 47 5 view .LVU46
+ 168 0036 58BB     		cbnz	r0, .L17
+  48:../../lib/storage/storage.c **** 	{
+  49:../../lib/storage/storage.c **** 		// Error occurred while page erase //
+  50:../../lib/storage/storage.c **** 		return HAL_FLASH_GetError ();
+  51:../../lib/storage/storage.c **** 	}
+  52:../../lib/storage/storage.c **** 
+  53:../../lib/storage/storage.c **** 	// concatenate data into 8 bytes word //
+  54:../../lib/storage/storage.c **** 	for (i = 0; i < len / WORD_SIZE_DOUBLE; i += 8)
+ 169              		.loc 1 54 9 view .LVU47
+ 170 0038 0024     		movs	r4, #0
+ 171              	.LVL15:
+ 172              	.L8:
+ 173              		.loc 1 54 14 is_stmt 1 discriminator 1 view .LVU48
+ 174              		.loc 1 54 2 is_stmt 0 discriminator 1 view .LVU49
+ 175 003a B4EBD70F 		cmp	r4, r7, lsr #3
+ 176 003e 2DD2     		bcs	.L18
+ARM GAS  /tmp/ccFaXYXl.s 			page 5
+
+
+  55:../../lib/storage/storage.c **** 		{	
+  56:../../lib/storage/storage.c **** 			// initialize dataconcatenated in each iteration //
+  57:../../lib/storage/storage.c **** 			dataconcatenated = 0;
+ 177              		.loc 1 57 4 is_stmt 1 view .LVU50
+ 178              	.LVL16:
+  58:../../lib/storage/storage.c **** 			// 8 data positions to one 8byte word //
+  59:../../lib/storage/storage.c **** 			dataconcatenated = ((uint64_t) data[i] << 56) | ((uint64_t) data[i + 1] << 48) | ((uint64_t) dat
+ 179              		.loc 1 59 4 view .LVU51
+ 180              		.loc 1 59 24 is_stmt 0 view .LVU52
+ 181 0040 305D     		ldrb	r0, [r6, r4]	@ zero_extendqisi2
+ 182              		.loc 1 59 68 view .LVU53
+ 183 0042 06EB040E 		add	lr, r6, r4
+ 184              		.loc 1 59 53 view .LVU54
+ 185 0046 9EF80120 		ldrb	r2, [lr, #1]	@ zero_extendqisi2
+ 186              		.loc 1 59 76 view .LVU55
+ 187 004a 4FEA024C 		lsl	ip, r2, #16
+ 188              		.loc 1 59 50 view .LVU56
+ 189 004e 4CEA006C 		orr	ip, ip, r0, lsl #24
+ 190              		.loc 1 59 86 view .LVU57
+ 191 0052 9EF80200 		ldrb	r0, [lr, #2]	@ zero_extendqisi2
+ 192              		.loc 1 59 83 view .LVU58
+ 193 0056 4CEA002C 		orr	ip, ip, r0, lsl #8
+ 194              		.loc 1 59 119 view .LVU59
+ 195 005a 9EF80300 		ldrb	r0, [lr, #3]	@ zero_extendqisi2
+  60:../../lib/storage/storage.c **** 								((uint64_t) data[i + 4] << 24) | ((uint64_t) data[i + 5] <<  16) | ((uint64_t) data[i + 6] 
+ 196              		.loc 1 60 10 view .LVU60
+ 197 005e 9EF80480 		ldrb	r8, [lr, #4]	@ zero_extendqisi2
+ 198              		.loc 1 60 43 view .LVU61
+ 199 0062 9EF80520 		ldrb	r2, [lr, #5]	@ zero_extendqisi2
+ 200              		.loc 1 60 66 view .LVU62
+ 201 0066 1204     		lsls	r2, r2, #16
+ 202              		.loc 1 60 40 view .LVU63
+ 203 0068 42EA0862 		orr	r2, r2, r8, lsl #24
+ 204              		.loc 1 60 77 view .LVU64
+ 205 006c 9EF806A0 		ldrb	r10, [lr, #6]	@ zero_extendqisi2
+ 206              		.loc 1 60 74 view .LVU65
+ 207 0070 42EA0A22 		orr	r2, r2, r10, lsl #8
+ 208              		.loc 1 60 113 view .LVU66
+ 209 0074 9EF807A0 		ldrb	r10, [lr, #7]	@ zero_extendqisi2
+ 210              	.LVL17:
+  61:../../lib/storage/storage.c **** 
+  62:../../lib/storage/storage.c **** 			if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, idx, dataconcatenated) == HAL_OK)
+ 211              		.loc 1 62 4 is_stmt 1 view .LVU67
+ 212              		.loc 1 62 8 is_stmt 0 view .LVU68
+ 213 0078 42EA0A02 		orr	r2, r2, r10
+ 214              	.LVL18:
+ 215              		.loc 1 62 8 view .LVU69
+ 216 007c 4CEA0003 		orr	r3, ip, r0
+ 217              	.LVL19:
+ 218              		.loc 1 62 8 view .LVU70
+ 219 0080 2946     		mov	r1, r5
+ 220 0082 0120     		movs	r0, #1
+ 221 0084 FFF7FEFF 		bl	HAL_FLASH_Program
+ 222              	.LVL20:
+ 223              		.loc 1 62 7 view .LVU71
+ 224 0088 28B9     		cbnz	r0, .L10
+  63:../../lib/storage/storage.c **** 				{
+ARM GAS  /tmp/ccFaXYXl.s 			page 6
+
+
+  64:../../lib/storage/storage.c **** 					idx += 8;  // use idx += 8 for double word //
+ 225              		.loc 1 64 6 is_stmt 1 view .LVU72
+ 226              		.loc 1 64 10 is_stmt 0 view .LVU73
+ 227 008a 0835     		adds	r5, r5, #8
+ 228              	.LVL21:
+  54:../../lib/storage/storage.c **** 		{	
+ 229              		.loc 1 54 42 is_stmt 1 view .LVU74
+  54:../../lib/storage/storage.c **** 		{	
+ 230              		.loc 1 54 44 is_stmt 0 view .LVU75
+ 231 008c 0834     		adds	r4, r4, #8
+ 232              	.LVL22:
+  54:../../lib/storage/storage.c **** 		{	
+ 233              		.loc 1 54 44 view .LVU76
+ 234 008e D4E7     		b	.L8
+ 235              	.LVL23:
+ 236              	.L17:
+  50:../../lib/storage/storage.c **** 	}
+ 237              		.loc 1 50 3 is_stmt 1 view .LVU77
+  50:../../lib/storage/storage.c **** 	}
+ 238              		.loc 1 50 10 is_stmt 0 view .LVU78
+ 239 0090 FFF7FEFF 		bl	HAL_FLASH_GetError
+ 240              	.LVL24:
+ 241 0094 0FE0     		b	.L7
+ 242              	.LVL25:
+ 243              	.L10:
+  65:../../lib/storage/storage.c **** 				}
+  66:../../lib/storage/storage.c **** 			else
+  67:../../lib/storage/storage.c **** 				{
+  68:../../lib/storage/storage.c **** 					// Error occurred while writing data in Flash memory //
+  69:../../lib/storage/storage.c **** 					return HAL_FLASH_GetError ();
+ 244              		.loc 1 69 6 is_stmt 1 view .LVU79
+ 245              		.loc 1 69 13 is_stmt 0 view .LVU80
+ 246 0096 FFF7FEFF 		bl	HAL_FLASH_GetError
+ 247              	.LVL26:
+ 248 009a 0CE0     		b	.L7
+ 249              	.L18:
+  70:../../lib/storage/storage.c **** 				}
+  71:../../lib/storage/storage.c **** 		}
+  72:../../lib/storage/storage.c **** 	dataconcatenated = 0;
+ 250              		.loc 1 72 2 is_stmt 1 view .LVU81
+ 251              	.LVL27:
+  73:../../lib/storage/storage.c **** 	// if len is not multiple of 8 (double size word) //
+  74:../../lib/storage/storage.c **** 	if ((len % WORD_SIZE_DOUBLE) != 0)
+ 252              		.loc 1 74 2 view .LVU82
+ 253              		.loc 1 74 5 is_stmt 0 view .LVU83
+ 254 009c 17F00707 		ands	r7, r7, #7
+ 255              	.LVL28:
+ 256              		.loc 1 74 5 view .LVU84
+ 257 00a0 04D0     		beq	.L19
+ 258              	.LBB3:
+  75:../../lib/storage/storage.c **** 		{
+  76:../../lib/storage/storage.c **** 			for (int j = 0; j < (len % WORD_SIZE_DOUBLE); j++)
+ 259              		.loc 1 76 13 view .LVU85
+ 260 00a2 0023     		movs	r3, #0
+ 261              	.LVL29:
+ 262              	.L12:
+ 263              		.loc 1 76 20 is_stmt 1 discriminator 1 view .LVU86
+ARM GAS  /tmp/ccFaXYXl.s 			page 7
+
+
+ 264              		.loc 1 76 4 is_stmt 0 discriminator 1 view .LVU87
+ 265 00a4 9F42     		cmp	r7, r3
+ 266 00a6 04D9     		bls	.L20
+  77:../../lib/storage/storage.c **** 				{	
+  78:../../lib/storage/storage.c **** 					// concatenate rest data into dataconcatenated						   //
+  79:../../lib/storage/storage.c **** 					// e.g 66 bytes data 								                   //
+  80:../../lib/storage/storage.c **** 					// 1st iteration -> data concatenated = data(65-th byte) | 00          //
+  81:../../lib/storage/storage.c **** 					// 2nd iteration -> concatenated = data(65-th byte) | data(66-th byte) //
+  82:../../lib/storage/storage.c **** 					//                                       						       //
+  83:../../lib/storage/storage.c **** 					//  concatenated bit [0 - 8]  bit [8 - 16]	..... bit [56 - 64]	       //
+  84:../../lib/storage/storage.c **** 					//                  |				|					|              //
+  85:../../lib/storage/storage.c **** 					//                byte 1         byte 2              byte 8			   //  
+  86:../../lib/storage/storage.c **** 					//  that is each time shift by 66 - 8 * (number of iteration) 		   //   
+  87:../../lib/storage/storage.c **** 					dataconcatenated = dataconcatenated | data[i + j] << (64 - WORD_SIZE_DOUBLE * (j + 1));
+ 267              		.loc 1 87 6 is_stmt 1 discriminator 3 view .LVU88
+  76:../../lib/storage/storage.c **** 				{	
+ 268              		.loc 1 76 50 discriminator 3 view .LVU89
+  76:../../lib/storage/storage.c **** 				{	
+ 269              		.loc 1 76 51 is_stmt 0 discriminator 3 view .LVU90
+ 270 00a8 0133     		adds	r3, r3, #1
+ 271              	.LVL30:
+  76:../../lib/storage/storage.c **** 				{	
+ 272              		.loc 1 76 51 discriminator 3 view .LVU91
+ 273 00aa FBE7     		b	.L12
+ 274              	.LVL31:
+ 275              	.L19:
+  76:../../lib/storage/storage.c **** 				{	
+ 276              		.loc 1 76 51 discriminator 3 view .LVU92
+ 277              	.LBE3:
+  88:../../lib/storage/storage.c **** 				}
+  89:../../lib/storage/storage.c **** 		}
+  90:../../lib/storage/storage.c ****     return -ENOTSUP;
+ 278              		.loc 1 90 12 view .LVU93
+ 279 00ac 6FF08500 		mvn	r0, #133
+ 280 00b0 01E0     		b	.L7
+ 281              	.LVL32:
+ 282              	.L20:
+ 283              		.loc 1 90 12 view .LVU94
+ 284 00b2 6FF08500 		mvn	r0, #133
+ 285              	.LVL33:
+ 286              	.L7:
+  91:../../lib/storage/storage.c **** }
+ 287              		.loc 1 91 1 view .LVU95
+ 288 00b6 03B0     		add	sp, sp, #12
+ 289              	.LCFI2:
+ 290              		.cfi_def_cfa_offset 36
+ 291              		@ sp needed
+ 292 00b8 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 293              	.LVL34:
+ 294              	.L22:
+ 295              		.loc 1 91 1 view .LVU96
+ 296              		.align	2
+ 297              	.L21:
+ 298 00bc 00000000 		.word	.LANCHOR0
+ 299              		.cfi_endproc
+ 300              	.LFE951:
+ 302              		.section	.text.storage_read,"ax",%progbits
+ARM GAS  /tmp/ccFaXYXl.s 			page 8
+
+
+ 303              		.align	1
+ 304              		.global	storage_read
+ 305              		.syntax unified
+ 306              		.thumb
+ 307              		.thumb_func
+ 308              		.fpu fpv4-sp-d16
+ 310              	storage_read:
+ 311              	.LFB952:
+  92:../../lib/storage/storage.c **** 
+  93:../../lib/storage/storage.c **** int storage_read(uint32_t idx, uint8_t *data, uint32_t len) {
+ 312              		.loc 1 93 61 is_stmt 1 view -0
+ 313              		.cfi_startproc
+ 314              		@ args = 0, pretend = 0, frame = 0
+ 315              		@ frame_needed = 0, uses_anonymous_args = 0
+ 316              		@ link register save eliminated.
+ 317              	.LVL35:
+ 318              	.L24:
+  94:../../lib/storage/storage.c ****     // TODO: implement this
+  95:../../lib/storage/storage.c **** 	while (1)
+ 319              		.loc 1 95 2 view .LVU98
+  96:../../lib/storage/storage.c **** 	{	
+  97:../../lib/storage/storage.c **** 		// read 1 word //
+  98:../../lib/storage/storage.c **** 		*data = *(__IO uint8_t *)idx;
+ 320              		.loc 1 98 3 view .LVU99
+ 321              		.loc 1 98 11 is_stmt 0 view .LVU100
+ 322 0000 10F8013B 		ldrb	r3, [r0], #1	@ zero_extendqisi2
+ 323              		.loc 1 98 9 view .LVU101
+ 324 0004 01F8013B 		strb	r3, [r1], #1
+  99:../../lib/storage/storage.c **** 		// 1 word //
+ 100:../../lib/storage/storage.c **** 		idx ++;
+ 325              		.loc 1 100 3 is_stmt 1 view .LVU102
+ 326              	.LVL36:
+ 101:../../lib/storage/storage.c **** 		// next position of pointer(array) //
+ 102:../../lib/storage/storage.c **** 		data++;
+ 327              		.loc 1 102 3 view .LVU103
+ 103:../../lib/storage/storage.c **** 		// if bytes to read finish //
+ 104:../../lib/storage/storage.c **** 		if (!(len--)) break;
+ 328              		.loc 1 104 3 view .LVU104
+ 329 0008 1346     		mov	r3, r2
+ 330              	.LVL37:
+ 331              		.loc 1 104 12 is_stmt 0 view .LVU105
+ 332 000a 013A     		subs	r2, r2, #1
+ 333              	.LVL38:
+ 334              		.loc 1 104 6 view .LVU106
+ 335 000c 002B     		cmp	r3, #0
+ 336 000e F7D1     		bne	.L24
+ 105:../../lib/storage/storage.c **** 	}
+ 106:../../lib/storage/storage.c ****     return -ENOTSUP;
+ 337              		.loc 1 106 5 is_stmt 1 view .LVU107
+ 107:../../lib/storage/storage.c **** }...
+ 338              		.loc 1 107 1 is_stmt 0 view .LVU108
+ 339 0010 6FF08500 		mvn	r0, #133
+ 340              	.LVL39:
+ 341              		.loc 1 107 1 view .LVU109
+ 342 0014 7047     		bx	lr
+ 343              		.cfi_endproc
+ 344              	.LFE952:
+ARM GAS  /tmp/ccFaXYXl.s 			page 9
+
+
+ 346              		.section	.bss.EraseInitStruct.11425,"aw",%nobits
+ 347              		.align	2
+ 348              		.set	.LANCHOR0,. + 0
+ 351              	EraseInitStruct.11425:
+ 352 0000 00000000 		.space	12
+ 352      00000000 
+ 352      00000000 
+ 353              		.text
+ 354              	.Letext0:
+ 355              		.file 2 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h"
+ 356              		.file 3 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h"
+ 357              		.file 4 "/usr/include/newlib/sys/_types.h"
+ 358              		.file 5 "/usr/include/newlib/sys/reent.h"
+ 359              		.file 6 "/usr/include/newlib/sys/lock.h"
+ 360              		.file 7 "/usr/include/newlib/sys/errno.h"
+ 361              		.file 8 "Drivers/CMSIS/Include/core_cm4.h"
+ 362              		.file 9 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/system_stm32wbxx.h"
+ 363              		.file 10 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_def.h"
+ 364              		.file 11 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_flash.h"
+ 365              		.file 12 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h"
+ 366              		.file 13 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
+ 367              		.file 14 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_flash_ex.h"
+ARM GAS  /tmp/ccFaXYXl.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 storage.c
+     /tmp/ccFaXYXl.s:18     .text.GetPage:0000000000000000 $t
+     /tmp/ccFaXYXl.s:25     .text.GetPage:0000000000000000 GetPage
+     /tmp/ccFaXYXl.s:81     .text.storage_write:0000000000000000 $t
+     /tmp/ccFaXYXl.s:88     .text.storage_write:0000000000000000 storage_write
+     /tmp/ccFaXYXl.s:298    .text.storage_write:00000000000000bc $d
+     /tmp/ccFaXYXl.s:303    .text.storage_read:0000000000000000 $t
+     /tmp/ccFaXYXl.s:310    .text.storage_read:0000000000000000 storage_read
+     /tmp/ccFaXYXl.s:347    .bss.EraseInitStruct.11425:0000000000000000 $d
+     /tmp/ccFaXYXl.s:351    .bss.EraseInitStruct.11425:0000000000000000 EraseInitStruct.11425
+
+UNDEFINED SYMBOLS
+HAL_FLASH_Unlock
+HAL_FLASHEx_Erase
+HAL_FLASH_Program
+HAL_FLASH_GetError

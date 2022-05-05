@@ -1,0 +1,201 @@
+ARM GAS  /tmp/ccOn3XL3.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 27, 1
+   3              		.eabi_attribute 28, 1
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"log.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.rodata.log_level.str1.4,"aMS",%progbits,1
+  18              		.align	2
+  19              	.LC0:
+  20 0000 25733A20 		.ascii	"%s: \000"
+  20      00
+  21 0005 000000   		.align	2
+  22              	.LC1:
+  23 0008 257300   		.ascii	"%s\000"
+  24              		.section	.text.log_level,"ax",%progbits
+  25              		.align	1
+  26              		.global	log_level
+  27              		.arch armv7e-m
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  31              		.fpu fpv4-sp-d16
+  33              	log_level:
+  34              	.LVL0:
+  35              	.LFB3:
+  36              		.file 1 "../../lib/log/log.c"
+   1:../../lib/log/log.c **** #include <stdarg.h>
+   2:../../lib/log/log.c **** #include <stdio.h>
+   3:../../lib/log/log.c **** #include "log.h"
+   4:../../lib/log/log.c **** 
+   5:../../lib/log/log.c **** #define MAX_SIZE (LOG_BUFFER_SIZE - 1) // should have space for \0
+   6:../../lib/log/log.c **** 
+   7:../../lib/log/log.c **** /**
+   8:../../lib/log/log.c ****  * Function for printing logs.
+   9:../../lib/log/log.c ****  * @param[in] level Desired level.
+  10:../../lib/log/log.c ****  * @param[in] level_str Desired level string prefix.
+  11:../../lib/log/log.c ****  * @param[in] format Provided output format.
+  12:../../lib/log/log.c ****  */
+  13:../../lib/log/log.c **** void log_level(const log_level_t level, const char *level_str, const char *format, ...) {
+  37              		.loc 1 13 89 view -0
+  38              		.cfi_startproc
+  39              		@ args = 4, pretend = 8, frame = 264
+  40              		@ frame_needed = 0, uses_anonymous_args = 1
+  14:../../lib/log/log.c **** 	if (LOG_LEVEL < level) {
+  41              		.loc 1 14 2 view .LVU1
+  42              		.loc 1 14 5 is_stmt 0 view .LVU2
+  43 0000 0428     		cmp	r0, #4
+ARM GAS  /tmp/ccOn3XL3.s 			page 2
+
+
+  44 0002 00D9     		bls	.L8
+  45 0004 7047     		bx	lr
+  46              	.L8:
+  13:../../lib/log/log.c **** 	if (LOG_LEVEL < level) {
+  47              		.loc 1 13 89 view .LVU3
+  48 0006 0CB4     		push	{r2, r3}
+  49              	.LCFI0:
+  50              		.cfi_def_cfa_offset 8
+  51              		.cfi_offset 2, -8
+  52              		.cfi_offset 3, -4
+  53 0008 30B5     		push	{r4, r5, lr}
+  54              	.LCFI1:
+  55              		.cfi_def_cfa_offset 20
+  56              		.cfi_offset 4, -20
+  57              		.cfi_offset 5, -16
+  58              		.cfi_offset 14, -12
+  59 000a C3B0     		sub	sp, sp, #268
+  60              	.LCFI2:
+  61              		.cfi_def_cfa_offset 288
+  15:../../lib/log/log.c **** 		return;
+  16:../../lib/log/log.c **** 	}
+  17:../../lib/log/log.c **** 
+  18:../../lib/log/log.c **** 	char log_buffer[LOG_BUFFER_SIZE];
+  62              		.loc 1 18 2 is_stmt 1 view .LVU4
+  19:../../lib/log/log.c **** 	uint16_t length = 0;
+  63              		.loc 1 19 2 view .LVU5
+  64              	.LVL1:
+  20:../../lib/log/log.c **** 
+  21:../../lib/log/log.c ****   	va_list list;
+  65              		.loc 1 21 4 view .LVU6
+  22:../../lib/log/log.c ****   	va_start(list, format);
+  66              		.loc 1 22 4 view .LVU7
+  67 000c 47AB     		add	r3, sp, #284
+  68 000e 0193     		str	r3, [sp, #4]
+  23:../../lib/log/log.c **** 	length += snprintf(&log_buffer[length], (MAX_SIZE - length), "%s: ", level_str);
+  69              		.loc 1 23 2 view .LVU8
+  70              		.loc 1 23 12 is_stmt 0 view .LVU9
+  71 0010 02AD     		add	r5, sp, #8
+  72 0012 0B46     		mov	r3, r1
+  73 0014 0C4A     		ldr	r2, .L9
+  74 0016 FF21     		movs	r1, #255
+  75              	.LVL2:
+  76              		.loc 1 23 12 view .LVU10
+  77 0018 2846     		mov	r0, r5
+  78              	.LVL3:
+  79              		.loc 1 23 12 view .LVU11
+  80 001a FFF7FEFF 		bl	snprintf
+  81              	.LVL4:
+  82              		.loc 1 23 9 view .LVU12
+  83 001e 84B2     		uxth	r4, r0
+  84              	.LVL5:
+  24:../../lib/log/log.c ****   	length += vsnprintf(&log_buffer[length], (MAX_SIZE - length), format, list);
+  85              		.loc 1 24 4 is_stmt 1 view .LVU13
+  86              		.loc 1 24 14 is_stmt 0 view .LVU14
+  87 0020 019B     		ldr	r3, [sp, #4]
+  88 0022 469A     		ldr	r2, [sp, #280]
+  89 0024 C4F1FF01 		rsb	r1, r4, #255
+ARM GAS  /tmp/ccOn3XL3.s 			page 3
+
+
+  90 0028 2819     		adds	r0, r5, r4
+  91 002a FFF7FEFF 		bl	vsnprintf
+  92              	.LVL6:
+  93              		.loc 1 24 11 view .LVU15
+  94 002e 0444     		add	r4, r4, r0
+  95              	.LVL7:
+  96              		.loc 1 24 11 view .LVU16
+  97 0030 A4B2     		uxth	r4, r4
+  98              	.LVL8:
+  25:../../lib/log/log.c ****   	log_buffer[length++] = '\0';
+  99              		.loc 1 25 4 is_stmt 1 view .LVU17
+ 100              		.loc 1 25 25 is_stmt 0 view .LVU18
+ 101 0032 0023     		movs	r3, #0
+ 102 0034 2B55     		strb	r3, [r5, r4]
+  26:../../lib/log/log.c ****   	va_end(list);
+ 103              		.loc 1 26 4 is_stmt 1 view .LVU19
+  27:../../lib/log/log.c **** 	printf("%s", log_buffer);
+ 104              		.loc 1 27 2 view .LVU20
+ 105 0036 2946     		mov	r1, r5
+ 106 0038 0448     		ldr	r0, .L9+4
+ 107 003a FFF7FEFF 		bl	printf
+ 108              	.LVL9:
+  28:../../lib/log/log.c **** }...
+ 109              		.loc 1 28 1 is_stmt 0 view .LVU21
+ 110 003e 43B0     		add	sp, sp, #268
+ 111              	.LCFI3:
+ 112              		.cfi_def_cfa_offset 20
+ 113              		@ sp needed
+ 114 0040 BDE83040 		pop	{r4, r5, lr}
+ 115              	.LCFI4:
+ 116              		.cfi_restore 14
+ 117              		.cfi_restore 5
+ 118              		.cfi_restore 4
+ 119              		.cfi_def_cfa_offset 8
+ 120              	.LVL10:
+ 121              		.loc 1 28 1 view .LVU22
+ 122 0044 02B0     		add	sp, sp, #8
+ 123              	.LCFI5:
+ 124              		.cfi_restore 3
+ 125              		.cfi_restore 2
+ 126              		.cfi_def_cfa_offset 0
+ 127 0046 7047     		bx	lr
+ 128              	.L10:
+ 129              		.align	2
+ 130              	.L9:
+ 131 0048 00000000 		.word	.LC0
+ 132 004c 08000000 		.word	.LC1
+ 133              		.cfi_endproc
+ 134              	.LFE3:
+ 136              		.text
+ 137              	.Letext0:
+ 138              		.file 2 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h"
+ 139              		.file 3 "/usr/include/newlib/machine/_default_types.h"
+ 140              		.file 4 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h"
+ 141              		.file 5 "/usr/include/newlib/sys/_types.h"
+ 142              		.file 6 "/usr/include/newlib/sys/reent.h"
+ 143              		.file 7 "/usr/include/newlib/sys/lock.h"
+ARM GAS  /tmp/ccOn3XL3.s 			page 4
+
+
+ 144              		.file 8 "/usr/include/newlib/sys/_stdint.h"
+ 145              		.file 9 "../../lib/log/log.h"
+ 146              		.file 10 "/usr/include/newlib/stdio.h"
+ 147              		.file 11 "<built-in>"
+ARM GAS  /tmp/ccOn3XL3.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 log.c
+     /tmp/ccOn3XL3.s:18     .rodata.log_level.str1.4:0000000000000000 $d
+     /tmp/ccOn3XL3.s:25     .text.log_level:0000000000000000 $t
+     /tmp/ccOn3XL3.s:33     .text.log_level:0000000000000000 log_level
+     /tmp/ccOn3XL3.s:131    .text.log_level:0000000000000048 $d
+
+UNDEFINED SYMBOLS
+snprintf
+vsnprintf
+printf
