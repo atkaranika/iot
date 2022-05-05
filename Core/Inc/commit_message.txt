@@ -1,0 +1,10 @@
+In order to create an operation each time when user push a button ,the following is applied.
+* main.c
+call  PB_Init(BUTTON_SW1, BUTTON_MODE_EXTI) (created in gpio.h)
+BUTTON_SW1: is the position of arrays BUTTON_PIN BUTTON_PORT (in order to find the pin and the port)
+
+
+* gpio.h 
+enum Button_TypeDef
+enum ButtonMode_TypeDef
+are created so as to pass them as parameters to init function 
