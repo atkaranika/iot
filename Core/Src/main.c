@@ -43,21 +43,12 @@
 /* USER CODE BEGIN PD */
 #define DS18B20_PORT GPIOA
 #define DS18B20_PIN GPIO_PIN_1
+#define MAX_SIZE_RECEIVE 30
 
 // p1s4 defines //
 #define MAX_INPUT_COMMAND 100
 #define MAX_INPUT_LED 10
 #define MAX_INPUT_STATUS 2
-
-// DHT11 DS18B20 //
-#define DHT11_PORT GPIOA
-#define DHT11_PIN GPIO_PIN_1
-
-// p1s5 defines //
-#define MAX_INPUT_ADDRESS 10
-#define MAX_INPUT_DATA 30 
-#define MAX_INPUT_LEN 3
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -72,24 +63,11 @@
 // p1s2 variables //
   
 // transmiter messages //
-
+uint8_t TxMessage[] = "\n\r ping\n\r";
 
 // receiver messages //
-uint8_t Rxresponse[30];
-
-
-uint8_t TxMessage[] = "\n\r ping\n\r";
-uint8_t RxMessage[] = "\n\r pong\n\r";
+uint8_t RxMessage[MAX_SIZE_RECEIVE] = {'\0'};
 int txrx ;
-
-// p1s3 variables //
-// DHT11 DS18B20 //
-uint8_t Rh_byte1, Rh_byte2, Temp_byte1, Temp_byte2;
-uint16_t SUM, RH, TEMP;
-float Temperature = 0;
-float Humidity = 0;
-uint8_t Presence = 0;
-
 
 // p1s4 variables //
 
@@ -99,17 +77,7 @@ char led[MAX_INPUT_LED]; // uart receive(config.c) led option //
 char status[MAX_INPUT_STATUS]; // uart receive(config.c) selected status of led //
 uint8_t uartresponseled[30] = "operation done!\n"; // after calling of command send a message back to congig //
 int i; // uartreadmessage index //
-
-
-// p1s5 variables //
-//  storage write variables //
-char idx[10]; // uart receive(config.c) startaddress // 
-char data[MAX_INPUT_DATA];  // uart receive(config.c) user input data to be written at startaddress //
-uint8_t uartresponsestorage[30] = "operation done!\n"; // after calling of command send a message back to congig //
-
-// storage read variables //
-char len[MAX_INPUT_LEN];  // uart receive(config.c) len of data to read //
- 
+int j;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -122,131 +90,6 @@ void PeriphCommonClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-// ==================== P1S3 ============== //
-
-void delay (uint16_t time)
-{
-	/* change your code here for the delay in microseconds */
-	__HAL_TIM_SET_COUNTER(&htim2, 0);
-	while ((__HAL_TIM_GET_COUNTER(&htim2))<time);
-}
-/*********************************** DHT11 FUNCTIONS p1s3 ********************************************/
-
-void Set_Pin_Output (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
-{
-	GPIO_InitTypeDef GPIO_InitStruct = {0};
-	GPIO_InitStruct.Pin = GPIO_Pin;
-	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-	HAL_GPIO_Init(GPIOx, &GPIO_InitStruct);
-}
-
-void Set_Pin_Input (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
-{
-	GPIO_InitTypeDef GPIO_InitStruct = {0};
-	GPIO_InitStruct.Pin = GPIO_Pin;
-	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-	GPIO_InitStruct.Pull = GPIO_PULLUP;
-	HAL_GPIO_Init(GPIOx, &GPIO_InitStruct);
-}
-
-void DHT11_Start (void)
-{
-	Set_Pin_Output (DHT11_PORT, DHT11_PIN);  // set the pin as output
-	HAL_GPIO_WritePin (DHT11_PORT, DHT11_PIN, 0);   // pull the pin low
-	delay (18000);   // wait for 18ms
-  HAL_GPIO_WritePin (DHT11_PORT, DHT11_PIN, 1);   // pull the pin high
-	delay (20);   // wait for 20us
-	Set_Pin_Input(DHT11_PORT, DHT11_PIN);    // set as input
-}
-
-uint8_t DHT11_Check_Response (void)
-{
-	uint8_t Response = 0;
-	delay (40);
-	if (!(HAL_GPIO_ReadPin (DHT11_PORT, DHT11_PIN)))
-	{
-		delay (80);
-		if ((HAL_GPIO_ReadPin (DHT11_PORT, DHT11_PIN))) Response = 1;
-		else Response = -1; // 255
-	}
-	while ((HAL_GPIO_ReadPin (DHT11_PORT, DHT11_PIN)));   // wait for the pin to go low
-
-	return Response;
-}
-
-uint8_t DHT11_Read (void)
-{
-	uint8_t i = 0;
-	uint8_t j = 0;
-
-	for (j = 0; j < 8; j++)
-	{
-		while (!(HAL_GPIO_ReadPin (DHT11_PORT, DHT11_PIN)));   // wait for the pin to go high
-		delay (40);   // wait for 40 us
-		if (!(HAL_GPIO_ReadPin (DHT11_PORT, DHT11_PIN)))   // if the pin is low
-		{
-			i &= ~(1 << (7 - j));   // write 0
-		}
-		else i |= (1 << (7 - j));  // if the pin is high, write 1
-		while ((HAL_GPIO_ReadPin (DHT11_PORT, DHT11_PIN)));  // wait for the pin to go low
-	}
-	return i;
-}
-
-/*********************************** DS18B20 FUNCTIONS p1s3****************************************/
-uint8_t DS18B20_Start (void)
-{
-	uint8_t Response = 0;
-	Set_Pin_Output(DS18B20_PORT, DS18B20_PIN);   // set the pin as output
-	HAL_GPIO_WritePin (DS18B20_PORT, DS18B20_PIN, 0);  // pull the pin low
-	delay (480);   // delay according to datasheet
-
-	Set_Pin_Input(DS18B20_PORT, DS18B20_PIN);    // set the pin as input
-	delay (80);    // delay according to datasheet
-
-	if (!(HAL_GPIO_ReadPin (DS18B20_PORT, DS18B20_PIN))) Response = 1;    // if the pin is low i.e the presence pulse is detected
-	else Response = -1;
-
-	delay (400); // 480 us delay totally.
-
-	return Response;
-}
-
-void DS18B20_Write (uint8_t data)
-{
-	Set_Pin_Output(DS18B20_PORT, DS18B20_PIN);  // set as output
-
-	for (int i = 0; i < 8; i++)
-	{
-
-		if ((data & (1<<i))!=0)  // if the bit is high
-		{
-			// write 1
-
-			Set_Pin_Output(DS18B20_PORT, DS18B20_PIN);  // set as output
-			HAL_GPIO_WritePin (DS18B20_PORT, DS18B20_PIN, 0);  // pull the pin LOW
-			delay (1);  // wait for 1 us
-
-			Set_Pin_Input(DS18B20_PORT, DS18B20_PIN);  // set as input
-			delay (50);  // wait for 60 us
-		}
-
-		else  // if the bit is low
-		{
-			// write 0
-
-			Set_Pin_Output(DS18B20_PORT, DS18B20_PIN);
-			HAL_GPIO_WritePin (DS18B20_PORT, DS18B20_PIN, 0);  // pull the pin LOW
-			delay (50);  // wait for 60 us
-
-			Set_Pin_Input(DS18B20_PORT, DS18B20_PIN);
-		}
-	}
-}
-
-// ==================== P1S3 ============== //
-
 /* USER CODE END 0 */
 
 /**
@@ -256,7 +99,7 @@ void DS18B20_Write (uint8_t data)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-   txrx = 1; // transmitter //
+   txrx = 1; // transmitter  1, receiver 0//
   // txrx = 0;
   /* USER CODE END 1 */
 
@@ -294,52 +137,90 @@ int main(void)
   
   while (1)
   {
-    /*
-    // ============================= P1S5 ====================== //
+   // ============================= P1S4 ====================== //
 
-    // ============================= P1S4 ====================== //
-    
-    // wait for message from config //
-    HAL_UART_Receive(&huart1, uartreadmessage, sizeof(uartreadmessage), 100);
-
-    i = 0;
-    // delimiter //
-    while(uartreadmessage[i] != '*')
+    // printf("hello world\n\r");
+    // strcpy(uartreadmessage, "hello_world");
+    // HAL_UART_Transmit(&huart1, uartreadmessage, sizeof(uartreadmessage), 100);
+    for (i = 0 ; i < 100 ; i++)
       {
-        command[i] = uartreadmessage[i];
-        i++;
+        uartreadmessage[i] = '\0';
       }
-    i++;
-    if (strcmp(command, "set_led"))
+    
+
+    // uartreadmessage[0] = '\0';
+    // wait for message from config //
+    HAL_UART_Receive(&huart1, uartreadmessage, sizeof(uartreadmessage), 1000);
+    i = 0;
+    
+    printf("receive command: %s\n\r", uartreadmessage); 
+    // if nothing received, repeat the receive proceedure //
+    if (uartreadmessage[0] == '\0')
+      {
+        continue;
+      }
+    i = 0;
+
+    // delimiter //
+    // printf("strlen uartreadmessage %d\n\r", strlen((char* )uartreadmessage));
+    for (i = 0 ; i < strlen(uartreadmessage) ; i++)
+      {
+        if (uartreadmessage[i] != '*')
+          {
+            command[i] = uartreadmessage[i];
+          }
+        else break ;
+      }
+    // printf("command = %s\n\r", command);
+    
+
+    if (strcmp(command, "set_led\n") == 0)
       { 
+        printf("set_led command\n\r");
         // message format command*led*status* //
         // delimiter //
-        while(uartreadmessage[i] != '*')
-          {
-            led[i] = uartreadmessage[i];
-            i++;
-          }
-        i++; 
+       
         // delimiter //
-        while(uartreadmessage[i] != '*')
+        // printf("led %s i  %d\n\r", led, i);
+        j = 0;
+        for (i = i + 1 ; i < strlen(uartreadmessage) ; i++)
           {
-            status[i] = uartreadmessage[i];
-            i++;
+            if (uartreadmessage[i] != '*')
+              {
+                led[j] = uartreadmessage[i];
+                j++;
+              }
+            else break ;
+          }
+        j = 0;
+        printf("led %s", led);
+        for (i = i + 1 ; i < strlen(uartreadmessage) ; i++)
+          {
+            if (uartreadmessage[i] != '*')
+              {
+                status[j] = uartreadmessage[i];
+                j++;
+              }
+            else break ;
           }
          // call the function //
-         if (strcmp(led, "red") == 0)
+        printf("status %s", status);
+
+         if (strcmp(led, "red\n") == 0)
           {
-              if (strcmp(status, "0") == 0)
+            printf("eftasa red\n");
+            if (strcmp(status, "0") == 0)
               {
                 set_led(LED_RED, LED_OFF); 
               }
-              else 
-                {
-                  set_led(LED_RED, LED_ON); 
-                }
+            else 
+              {
+                set_led(LED_RED, LED_ON); 
+              }
           }
-        else if (strcmp(led, "blue") == 0)
+        else if (strcmp(led, "blue\n") == 0)
           {
+            printf("eftasa blue\n");
             if (strcmp(status, "0") == 0)
               {
                 set_led(LED_BLUE, LED_OFF); 
@@ -349,8 +230,9 @@ int main(void)
                 set_led(LED_BLUE, LED_ON); 
               }
           }
-        else if (strcmp(led, "green") == 0)
+        else if (strcmp(led, "green\n") == 0)
           {
+            printf("eftasa green\n");
             if (strcmp(status, "0") == 0)
               {
                 set_led(LED_GREEN, LED_OFF); 
@@ -360,10 +242,11 @@ int main(void)
                 set_led(LED_GREEN, LED_ON); 
               }
           }
-
-        // send response to config to inform that command is submitted successfully //
-	      HAL_UART_Transmit(&huart1, (uint8_t *)uartresponseled, sizeof(uartresponseled), 0xFFFF);
       }
+    //     // send response to config to inform that command is submitted successfully //
+	      //  HAL_UART_Transmit(&huart1, (uint8_t *)uartresponseled, sizeof(uartresponseled), 0xFFFF);
+    //   }
+       /*
       if (strcmp(command, "storage_write"))
           { 
             // message format command*address*data* //
@@ -380,7 +263,6 @@ int main(void)
                 data[i] = uartreadmessage[i];
                 i++;
               }
-
             // call the function //
             // idx : startaddress string  //
             // 16 : hexadecimal           //
@@ -388,7 +270,6 @@ int main(void)
             // send response to config to inform that command is submitted successfully //
             HAL_UART_Transmit(&huart1, (uint8_t *)uartresponsestorage, sizeof(uartresponseled), 0xFFFF);
           }
-
         if (strcmp(command, "storage_read"))
           {
             // message format command*address*len* //
@@ -405,91 +286,15 @@ int main(void)
                 len[i] = uartreadmessage[i];
                 i++;
               }
-
             // call the function //
             // idx : startaddress string  //
             storage_read(strtol(idx, NULL, 16), (uint8_t*) data, (uint32_t) atoi(len)); 
             // send response to config to inform that command is submitted successfully //
             HAL_UART_Transmit(&huart1, (uint8_t *)uartresponsestorage, sizeof(uartresponseled), 0xFFFF); 
           }
-    
+    */
     // ============================= P1S4 ====================== //
 
-    // ============================= P1S3 ====================== //
-    
-    DHT11_Start();
-    Presence = DHT11_Check_Response();
-    Rh_byte1 = DHT11_Read ();
-    Rh_byte2 = DHT11_Read ();
-    Temp_byte1 = DHT11_Read ();
-    Temp_byte2 = DHT11_Read ();
-    SUM = DHT11_Read();
-
-    TEMP = Temp_byte1;
-    RH = Rh_byte1;
-
-    Temperature = (float) TEMP;
-    Humidity = (float) RH;
-    
-    
-    // ============================= P1S3 ====================== //
-    */
-    // ============================= P1S2 ====================== //
-    
-    //   ***********************  TRANSMITTER *********************************  //
-    // Wait for User push-button (SW1) press before starting the Communication   //
-    // After user pushes the SW1, transmitter board sends a message to receiver  //
-    // Blue led remains turned on for 2'' to indicate that the message has sent  //
-  
-    if (txrx)
-      {
-        printf("transmitter starts\n\r");
-        // read the state of button 1 //
-         if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_4) == 1)
-           {   
-              printf("pushed button\n\r");
-
-              HAL_Delay(2000);
-
-              // send a message to receiver //
-              HAL_UART_Transmit(&hlpuart1, TxMessage, strlen((char*)TxMessage), 0xFFFF);
-
-              // led blue state becomes on to indicate that a message has just been sent //
-              set_led(LED_BLUE, LED_ON);
-
-              printf("transmitter ping\n\r");
-              HAL_Delay(100);
-              
-              // led blue state becomes off to indicate that a message has just been received //
-              set_led(LED_BLUE, LED_OFF); 
-              txrx = 0;
-              
-          }
-      }
-    //   ***********************  RECEIVER ********************************* //
-    // waits for 2'' to receive a message                                    //
-    else 
-      {
-        printf("Receiver starts!\n\r");
-
-        // receive a message //
-        HAL_UART_Receive(&hlpuart1, RxMessage, strlen((char*)TxMessage), 1000);
-
-        printf("received message: %s\n\r", RxMessage);
-
-        // led blue state becomes on to indicate that a message has just been received //
-        set_led(LED_BLUE, LED_ON); 
-
-        // duration that blue led will be turned on //
-        HAL_Delay(100);
-        
-        // turn off led blue //
-        set_led(LED_BLUE, LED_OFF); 
-        txrx = 1;
-      }
-
-    // ============================= P1S2 ====================== //
-   
     // ============================= P1S1 ====================== //
 
     //hello_world();

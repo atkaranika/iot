@@ -24,7 +24,7 @@ int set_led(char *uartmessage)
 
         char uartreadmessage[100];
         flags = O_RDWR| O_NOCTTY;
-        fduart = open("dev/ttyUSB0", flags);
+        fduart = open("/dev/ttyACM0", flags);
 
         if (fduart == -1)
             {
@@ -32,21 +32,22 @@ int set_led(char *uartmessage)
                 return -1;   
             }
         returnwrite = write(fduart, uartmessage, strlen(uartmessage));
-
         if (returnwrite < 0)
             {
                 printf("Error while sending!\n");
                 return -1;
             }
-
-        returnread = read(fduart, uartreadmessage, strlen(uartreadmessage));
+        printf("wirte to uart set_led message : %s\n", uartmessage);
+        // returnread = read(fduart, uartreadmessage, strlen(uartreadmessage));
 
         if (returnread < 0)
             {
                 printf("Error while reading!\n");
                 return -1;
             }
+        sleep(0);
         printf("read from uart -> %s\n", uartreadmessage);
+        close(fduart);
         return 0;
     }
 
@@ -105,6 +106,7 @@ int main(int argc, char *argv[])
         char storagereadparam[100];  // the message to be sent through uart(concatenated) with '*' delimiter //
                                       // parameter to storage_read                                           //
 
+        int i = 0;
         // show the available implemented commands //
         printf("===== Command Options ========\n");
         printf("set_led\n");
@@ -123,6 +125,10 @@ int main(int argc, char *argv[])
                     }
                 else if (strncmp(command, "set_led", 7) == 0)
                     {
+                        for (i = 0 ; i < 100; i++)
+                            {
+                                setledparam[i] = '\0';
+                            }
                         // ask user which led (red green blue) //
                         printf("Give led: \n");
                         fgets(led, MAX_INPUT_LED, stdin);
@@ -140,7 +146,7 @@ int main(int argc, char *argv[])
                         printf("Give status: \n");
                         fgets(status, MAX_INPUT_STATUS, stdin);
                         // check user input //
-                        while  (strcmp (status, "0\n") != 0 && strcmp (status, "1\n"))
+                        while  ((strcmp(status, "0") != 0) && (strcmp (status, "1") != 0))
                             {
                                 if (strcmp(status, "quit") == 0)
                                     {

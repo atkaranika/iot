@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc5iYMad.s 			page 1
+ARM GAS  /tmp/ccq8UsN5.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
   27:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         configured by software in several modes:
   28:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         (++) Input mode
   29:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         (++) Analog mode
-ARM GAS  /tmp/cc5iYMad.s 			page 2
+ARM GAS  /tmp/ccq8UsN5.s 			page 2
 
 
   30:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         (++) Output mode
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
   84:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         HAL_GPIO_WritePin()/HAL_GPIO_TogglePin().
   85:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** 
   86:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****    (#) To lock pin configuration until next reset use HAL_GPIO_LockPin().
-ARM GAS  /tmp/cc5iYMad.s 			page 3
+ARM GAS  /tmp/ccq8UsN5.s 			page 3
 
 
   87:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  141:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** 
  142:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** /** @addtogroup GPIO_Exported_Functions_Group1
  143:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   *  @brief    Initialization and Configuration functions
-ARM GAS  /tmp/cc5iYMad.s 			page 4
+ARM GAS  /tmp/ccq8UsN5.s 			page 4
 
 
  144:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   *
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
   52              		.loc 1 163 12 is_stmt 0 view .LVU10
   53 0002 0023     		movs	r3, #0
   54              		.loc 1 174 9 view .LVU11
-ARM GAS  /tmp/cc5iYMad.s 			page 5
+ARM GAS  /tmp/ccq8UsN5.s 			page 5
 
 
   55 0004 5FE0     		b	.L2
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
   88              		.loc 1 195 14 is_stmt 0 view .LVU28
   89 001c 26EA0406 		bic	r6, r6, r4
   90              	.LVL7:
-ARM GAS  /tmp/cc5iYMad.s 			page 6
+ARM GAS  /tmp/ccq8UsN5.s 			page 6
 
 
  196:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         temp |= (((GPIO_Init->Mode & OUTPUT_TYPE) >> OUTPUT_TYPE_Pos) << position);
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  122 003c 0F24     		movs	r4, #15
  123 003e B440     		lsls	r4, r4, r6
  124              		.loc 1 218 14 view .LVU45
-ARM GAS  /tmp/cc5iYMad.s 			page 7
+ARM GAS  /tmp/ccq8UsN5.s 			page 7
 
 
  125 0040 27EA0407 		bic	r7, r7, r4
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  158              		.loc 1 239 14 is_stmt 0 discriminator 20 view .LVU58
  159 0062 474C     		ldr	r4, .L23+4
  160              	.LVL15:
-ARM GAS  /tmp/cc5iYMad.s 			page 8
+ARM GAS  /tmp/ccq8UsN5.s 			page 8
 
 
  161              		.loc 1 239 14 discriminator 20 view .LVU59
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  203              	.L9:
  252:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         }
  253:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         EXTI->FTSR1 = temp;
-ARM GAS  /tmp/cc5iYMad.s 			page 9
+ARM GAS  /tmp/ccq8UsN5.s 			page 9
 
 
  204              		.loc 1 253 9 is_stmt 1 view .LVU79
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  267:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****         {
  268:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****           temp |= iocurrent;
  245              		.loc 1 268 11 is_stmt 1 view .LVU99
-ARM GAS  /tmp/cc5iYMad.s 			page 10
+ARM GAS  /tmp/ccq8UsN5.s 			page 10
 
 
  246              		.loc 1 268 16 is_stmt 0 view .LVU100
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  283              		.loc 1 183 29 view .LVU116
  284 00d8 05F00305 		and	r5, r5, #3
  183:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****       {
-ARM GAS  /tmp/cc5iYMad.s 			page 11
+ARM GAS  /tmp/ccq8UsN5.s 			page 11
 
 
  285              		.loc 1 183 58 view .LVU117
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  322 00fe C460     		str	r4, [r0, #12]
  323              	.LVL36:
  324              	.L5:
-ARM GAS  /tmp/cc5iYMad.s 			page 12
+ARM GAS  /tmp/ccq8UsN5.s 			page 12
 
 
  210:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****       {
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  231:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****       {
  361              		.loc 1 231 21 is_stmt 0 view .LVU153
  362 0122 4C68     		ldr	r4, [r1, #4]
-ARM GAS  /tmp/cc5iYMad.s 			page 13
+ARM GAS  /tmp/ccq8UsN5.s 			page 13
 
 
  363              	.LVL40:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  402              		.loc 1 235 18 discriminator 7 view .LVU168
  403 015e 04F58064 		add	r4, r4, #1024
  404 0162 A042     		cmp	r0, r4
-ARM GAS  /tmp/cc5iYMad.s 			page 14
+ARM GAS  /tmp/ccq8UsN5.s 			page 14
 
 
  405 0164 3FF474AF 		beq	.L22
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  286:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** {
  449              		.loc 1 286 1 is_stmt 1 view -0
  450              		.cfi_startproc
-ARM GAS  /tmp/cc5iYMad.s 			page 15
+ARM GAS  /tmp/ccq8UsN5.s 			page 15
 
 
  451              		@ args = 0, pretend = 0, frame = 0
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  481 0010 0026     		movs	r6, #0
  482              	.L28:
  483              		.loc 1 308 41 discriminator 20 view .LVU182
-ARM GAS  /tmp/cc5iYMad.s 			page 16
+ARM GAS  /tmp/ccq8UsN5.s 			page 16
 
 
  484 0012 06FA04F4 		lsl	r4, r6, r4
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  516              		.loc 1 330 7 is_stmt 1 view .LVU195
  517              		.loc 1 330 20 is_stmt 0 view .LVU196
  518 0048 C568     		ldr	r5, [r0, #12]
-ARM GAS  /tmp/cc5iYMad.s 			page 17
+ARM GAS  /tmp/ccq8UsN5.s 			page 17
 
 
  519 004a 25EA0405 		bic	r5, r5, r4
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  555              		.loc 1 306 11 view .LVU211
  556 0076 0CF10205 		add	r5, ip, #2
  557 007a 224C     		ldr	r4, .L43
-ARM GAS  /tmp/cc5iYMad.s 			page 18
+ARM GAS  /tmp/ccq8UsN5.s 			page 18
 
 
  558 007c 54F82550 		ldr	r5, [r4, r5, lsl #2]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  600              	.L34:
  601 00be 0326     		movs	r6, #3
  602 00c0 A7E7     		b	.L28
-ARM GAS  /tmp/cc5iYMad.s 			page 19
+ARM GAS  /tmp/ccq8UsN5.s 			page 19
 
 
  603              	.L40:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  643              	.LCFI3:
  644              		.cfi_def_cfa_offset 0
  645              		.cfi_restore 4
-ARM GAS  /tmp/cc5iYMad.s 			page 20
+ARM GAS  /tmp/ccq8UsN5.s 			page 20
 
 
  646              		.cfi_restore 5
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  676              		@ link register save eliminated.
  368:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   GPIO_PinState bitstatus;
  677              		.loc 1 368 3 view .LVU239
-ARM GAS  /tmp/cc5iYMad.s 			page 21
+ARM GAS  /tmp/ccq8UsN5.s 			page 21
 
 
  369:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  391:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @param GPIOx where x can be (A..F) to select the GPIO peripheral for STM32WBxx family
  392:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @param GPIO_Pin specifies the port bit to be written.
  393:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   *         This parameter can be one of GPIO_PIN_x where x can be (0..15).
-ARM GAS  /tmp/cc5iYMad.s 			page 22
+ARM GAS  /tmp/ccq8UsN5.s 			page 22
 
 
  394:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @param PinState specifies the value to be written to the selected bit.
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  416:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** /**
  417:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @brief  Toggle the specified GPIO pin.
  418:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @param GPIOx where x can be (A..H) to select the GPIO peripheral for STM32WBxx family
-ARM GAS  /tmp/cc5iYMad.s 			page 23
+ARM GAS  /tmp/ccq8UsN5.s 			page 23
 
 
  419:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @param GPIO_Pin specifies the pin to be toggled.
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  438:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @note   The locked registers are GPIOx_MODER, GPIOx_OTYPER, GPIOx_OSPEEDR,
  439:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   *         GPIOx_PUPDR, GPIOx_AFRL and GPIOx_AFRH.
  440:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @note   The configuration of the locked GPIO pins can no longer be modified
-ARM GAS  /tmp/cc5iYMad.s 			page 24
+ARM GAS  /tmp/ccq8UsN5.s 			page 24
 
 
  441:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   *         until the next reset.
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  464:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   tmp = GPIOx->LCKR;
  814              		.loc 1 464 3 is_stmt 1 view .LVU284
  815              		.loc 1 464 14 is_stmt 0 view .LVU285
-ARM GAS  /tmp/cc5iYMad.s 			page 25
+ARM GAS  /tmp/ccq8UsN5.s 			page 25
 
 
  816 0018 C369     		ldr	r3, [r0, #28]
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  476:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** 
  477:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c **** /**
  478:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @brief  Handle EXTI interrupt request.
-ARM GAS  /tmp/cc5iYMad.s 			page 26
+ARM GAS  /tmp/ccq8UsN5.s 			page 26
 
 
  479:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c ****   * @param GPIO_Pin Specifies the port pin connected to corresponding EXTI line.
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  886 0000 08B5     		push	{r3, lr}
  887              	.LCFI7:
  888              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/cc5iYMad.s 			page 27
+ARM GAS  /tmp/ccq8UsN5.s 			page 27
 
 
  889              		.cfi_offset 3, -8
@@ -1608,29 +1608,29 @@ ARM GAS  /tmp/cc5iYMad.s 			page 1
  927              		.file 8 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio.h"
  928              		.file 9 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h"
  929              		.file 10 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
-ARM GAS  /tmp/cc5iYMad.s 			page 28
+ARM GAS  /tmp/ccq8UsN5.s 			page 28
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32wbxx_hal_gpio.c
-     /tmp/cc5iYMad.s:18     .text.HAL_GPIO_Init:0000000000000000 $t
-     /tmp/cc5iYMad.s:26     .text.HAL_GPIO_Init:0000000000000000 HAL_GPIO_Init
-     /tmp/cc5iYMad.s:432    .text.HAL_GPIO_Init:000000000000017c $d
-     /tmp/cc5iYMad.s:439    .text.HAL_GPIO_DeInit:0000000000000000 $t
-     /tmp/cc5iYMad.s:446    .text.HAL_GPIO_DeInit:0000000000000000 HAL_GPIO_DeInit
-     /tmp/cc5iYMad.s:655    .text.HAL_GPIO_DeInit:0000000000000104 $d
-     /tmp/cc5iYMad.s:662    .text.HAL_GPIO_ReadPin:0000000000000000 $t
-     /tmp/cc5iYMad.s:669    .text.HAL_GPIO_ReadPin:0000000000000000 HAL_GPIO_ReadPin
-     /tmp/cc5iYMad.s:702    .text.HAL_GPIO_WritePin:0000000000000000 $t
-     /tmp/cc5iYMad.s:709    .text.HAL_GPIO_WritePin:0000000000000000 HAL_GPIO_WritePin
-     /tmp/cc5iYMad.s:736    .text.HAL_GPIO_TogglePin:0000000000000000 $t
-     /tmp/cc5iYMad.s:743    .text.HAL_GPIO_TogglePin:0000000000000000 HAL_GPIO_TogglePin
-     /tmp/cc5iYMad.s:773    .text.HAL_GPIO_LockPin:0000000000000000 $t
-     /tmp/cc5iYMad.s:780    .text.HAL_GPIO_LockPin:0000000000000000 HAL_GPIO_LockPin
-     /tmp/cc5iYMad.s:849    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
-     /tmp/cc5iYMad.s:856    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
-     /tmp/cc5iYMad.s:871    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 $t
-     /tmp/cc5iYMad.s:878    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 HAL_GPIO_EXTI_IRQHandler
-     /tmp/cc5iYMad.s:915    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000018 $d
+     /tmp/ccq8UsN5.s:18     .text.HAL_GPIO_Init:0000000000000000 $t
+     /tmp/ccq8UsN5.s:26     .text.HAL_GPIO_Init:0000000000000000 HAL_GPIO_Init
+     /tmp/ccq8UsN5.s:432    .text.HAL_GPIO_Init:000000000000017c $d
+     /tmp/ccq8UsN5.s:439    .text.HAL_GPIO_DeInit:0000000000000000 $t
+     /tmp/ccq8UsN5.s:446    .text.HAL_GPIO_DeInit:0000000000000000 HAL_GPIO_DeInit
+     /tmp/ccq8UsN5.s:655    .text.HAL_GPIO_DeInit:0000000000000104 $d
+     /tmp/ccq8UsN5.s:662    .text.HAL_GPIO_ReadPin:0000000000000000 $t
+     /tmp/ccq8UsN5.s:669    .text.HAL_GPIO_ReadPin:0000000000000000 HAL_GPIO_ReadPin
+     /tmp/ccq8UsN5.s:702    .text.HAL_GPIO_WritePin:0000000000000000 $t
+     /tmp/ccq8UsN5.s:709    .text.HAL_GPIO_WritePin:0000000000000000 HAL_GPIO_WritePin
+     /tmp/ccq8UsN5.s:736    .text.HAL_GPIO_TogglePin:0000000000000000 $t
+     /tmp/ccq8UsN5.s:743    .text.HAL_GPIO_TogglePin:0000000000000000 HAL_GPIO_TogglePin
+     /tmp/ccq8UsN5.s:773    .text.HAL_GPIO_LockPin:0000000000000000 $t
+     /tmp/ccq8UsN5.s:780    .text.HAL_GPIO_LockPin:0000000000000000 HAL_GPIO_LockPin
+     /tmp/ccq8UsN5.s:849    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+     /tmp/ccq8UsN5.s:856    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+     /tmp/ccq8UsN5.s:871    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 $t
+     /tmp/ccq8UsN5.s:878    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 HAL_GPIO_EXTI_IRQHandler
+     /tmp/ccq8UsN5.s:915    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000018 $d
 
 NO UNDEFINED SYMBOLS

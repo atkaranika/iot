@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccMIb7hj.s 			page 1
+ARM GAS  /tmp/ccQEVT3j.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
   28:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
   29:Core/Src/gpio.c **** /* Configure GPIO                                                             */
   30:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
-ARM GAS  /tmp/ccMIb7hj.s 			page 2
+ARM GAS  /tmp/ccQEVT3j.s 			page 2
 
 
   31:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
   10:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * All rights reserved.
   11:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *
   12:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * This software is licensed under terms that can be found in the LICENSE file
-ARM GAS  /tmp/ccMIb7hj.s 			page 3
+ARM GAS  /tmp/ccQEVT3j.s 			page 3
 
 
   13:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * in the root directory of this software component.
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
   67:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /** @defgroup BUS_LL_Exported_Constants BUS Exported Constants
   68:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @{
   69:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
-ARM GAS  /tmp/ccMIb7hj.s 			page 4
+ARM GAS  /tmp/ccQEVT3j.s 			page 4
 
 
   70:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  124:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_AHB3_GRP1_PERIPH_IPCC           RCC_AHB3ENR_IPCCEN
  125:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_AHB3_GRP1_PERIPH_SRAM2          RCC_AHB3SMENR_SRAM2SMEN
  126:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_AHB3_GRP1_PERIPH_FLASH          RCC_AHB3ENR_FLASHEN
-ARM GAS  /tmp/ccMIb7hj.s 			page 5
+ARM GAS  /tmp/ccQEVT3j.s 			page 5
 
 
  127:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  181:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_TIM1           RCC_APB2ENR_TIM1EN
  182:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_SPI1           RCC_APB2ENR_SPI1EN
  183:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_USART1         RCC_APB2ENR_USART1EN
-ARM GAS  /tmp/ccMIb7hj.s 			page 6
+ARM GAS  /tmp/ccQEVT3j.s 			page 6
 
 
  184:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(TIM16)
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  238:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif
  239:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(AES1)
  240:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_AHB2_GRP1_PERIPH_AES1         RCC_C2AHB2ENR_AES1EN
-ARM GAS  /tmp/ccMIb7hj.s 			page 7
+ARM GAS  /tmp/ccQEVT3j.s 			page 7
 
 
  241:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  295:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
  296:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
  297:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /** @defgroup BUS_LL_EC_C2_APB2_GRP1_PERIPH  C2 APB2 GRP1 PERIPH
-ARM GAS  /tmp/ccMIb7hj.s 			page 8
+ARM GAS  /tmp/ccQEVT3j.s 			page 8
 
 
  298:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @{
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  352:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB1ENR      DMAMUX1EN      LL_AHB1_GRP1_EnableClock\n
  353:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB1ENR      CRCEN         LL_AHB1_GRP1_EnableClock\n
  354:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB1ENR      TSCEN         LL_AHB1_GRP1_EnableClock
-ARM GAS  /tmp/ccMIb7hj.s 			page 9
+ARM GAS  /tmp/ccQEVT3j.s 			page 9
 
 
  355:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  409:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
  410:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_AHB1_GRP1_DisableClock(uint32_t Periphs)
  411:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
-ARM GAS  /tmp/ccMIb7hj.s 			page 10
+ARM GAS  /tmp/ccQEVT3j.s 			page 10
 
 
  412:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB1ENR, Periphs);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  466:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB1SMENR    TSCSMEN       LL_AHB1_GRP1_EnableClockSleep
  467:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
  468:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMA1
-ARM GAS  /tmp/ccMIb7hj.s 			page 11
+ARM GAS  /tmp/ccQEVT3j.s 			page 11
 
 
  469:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMA2 (*)
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  523:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2ENR      GPIOEEN       LL_AHB2_GRP1_EnableClock\n
  524:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2ENR      GPIOHEN       LL_AHB2_GRP1_EnableClock\n
  525:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2ENR      ADCEN         LL_AHB2_GRP1_EnableClock\n
-ARM GAS  /tmp/ccMIb7hj.s 			page 12
+ARM GAS  /tmp/ccQEVT3j.s 			page 12
 
 
  526:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2ENR      AES1EN        LL_AHB2_GRP1_EnableClock
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  544:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
   86              		.loc 2 544 3 view .LVU16
  544:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
-ARM GAS  /tmp/ccMIb7hj.s 			page 13
+ARM GAS  /tmp/ccQEVT3j.s 			page 13
 
 
   87              		.loc 2 544 12 is_stmt 0 view .LVU17
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  129 0050 DA64     		str	r2, [r3, #76]
  544:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
  130              		.loc 2 544 3 view .LVU34
-ARM GAS  /tmp/ccMIb7hj.s 			page 14
+ARM GAS  /tmp/ccQEVT3j.s 			page 14
 
 
  544:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  170              		.loc 1 64 24 is_stmt 0 view .LVU50
  171 0080 0694     		str	r4, [sp, #24]
   65:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
-ARM GAS  /tmp/ccMIb7hj.s 			page 15
+ARM GAS  /tmp/ccQEVT3j.s 			page 15
 
 
  172              		.loc 1 65 3 is_stmt 1 view .LVU51
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  212              	.LVL9:
   80:Core/Src/gpio.c **** 
   81:Core/Src/gpio.c **** }
-ARM GAS  /tmp/ccMIb7hj.s 			page 16
+ARM GAS  /tmp/ccQEVT3j.s 			page 16
 
 
  213              		.loc 1 81 1 is_stmt 0 view .LVU70
@@ -926,14 +926,14 @@ ARM GAS  /tmp/ccMIb7hj.s 			page 1
  236              		.file 9 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio.h"
  237              		.file 10 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h"
  238              		.file 11 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
-ARM GAS  /tmp/ccMIb7hj.s 			page 17
+ARM GAS  /tmp/ccQEVT3j.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gpio.c
-     /tmp/ccMIb7hj.s:18     .text.MX_GPIO_Init:0000000000000000 $t
-     /tmp/ccMIb7hj.s:26     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-     /tmp/ccMIb7hj.s:222    .text.MX_GPIO_Init:00000000000000b4 $d
+     /tmp/ccQEVT3j.s:18     .text.MX_GPIO_Init:0000000000000000 $t
+     /tmp/ccQEVT3j.s:26     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+     /tmp/ccQEVT3j.s:222    .text.MX_GPIO_Init:00000000000000b4 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

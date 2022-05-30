@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccOn3XL3.s 			page 1
+ARM GAS  /tmp/cczIvKLb.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccOn3XL3.s 			page 1
   41              		.loc 1 14 2 view .LVU1
   42              		.loc 1 14 5 is_stmt 0 view .LVU2
   43 0000 0428     		cmp	r0, #4
-ARM GAS  /tmp/ccOn3XL3.s 			page 2
+ARM GAS  /tmp/cczIvKLb.s 			page 2
 
 
   44 0002 00D9     		bls	.L8
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccOn3XL3.s 			page 1
   87 0020 019B     		ldr	r3, [sp, #4]
   88 0022 469A     		ldr	r2, [sp, #280]
   89 0024 C4F1FF01 		rsb	r1, r4, #255
-ARM GAS  /tmp/ccOn3XL3.s 			page 3
+ARM GAS  /tmp/cczIvKLb.s 			page 3
 
 
   90 0028 2819     		adds	r0, r5, r4
@@ -178,22 +178,22 @@ ARM GAS  /tmp/ccOn3XL3.s 			page 1
  141              		.file 5 "/usr/include/newlib/sys/_types.h"
  142              		.file 6 "/usr/include/newlib/sys/reent.h"
  143              		.file 7 "/usr/include/newlib/sys/lock.h"
-ARM GAS  /tmp/ccOn3XL3.s 			page 4
+ARM GAS  /tmp/cczIvKLb.s 			page 4
 
 
  144              		.file 8 "/usr/include/newlib/sys/_stdint.h"
  145              		.file 9 "../../lib/log/log.h"
  146              		.file 10 "/usr/include/newlib/stdio.h"
  147              		.file 11 "<built-in>"
-ARM GAS  /tmp/ccOn3XL3.s 			page 5
+ARM GAS  /tmp/cczIvKLb.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 log.c
-     /tmp/ccOn3XL3.s:18     .rodata.log_level.str1.4:0000000000000000 $d
-     /tmp/ccOn3XL3.s:25     .text.log_level:0000000000000000 $t
-     /tmp/ccOn3XL3.s:33     .text.log_level:0000000000000000 log_level
-     /tmp/ccOn3XL3.s:131    .text.log_level:0000000000000048 $d
+     /tmp/cczIvKLb.s:18     .rodata.log_level.str1.4:0000000000000000 $d
+     /tmp/cczIvKLb.s:25     .text.log_level:0000000000000000 $t
+     /tmp/cczIvKLb.s:33     .text.log_level:0000000000000000 log_level
+     /tmp/cczIvKLb.s:131    .text.log_level:0000000000000048 $d
 
 UNDEFINED SYMBOLS
 snprintf

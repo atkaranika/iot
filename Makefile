@@ -200,13 +200,13 @@ clean:
 # custom commands
 #######################################
 flash: # programs your board with the project’s binary
-	st-flash write $(BUILD_DIR)/$(TARGET).bin 0x8000000
+	st-flash  write $(BUILD_DIR)/$(TARGET).bin 0x8000000
 reset: # causes a board reset
 	st-flash reset
 gdb-server: # opens gdb server at port 4242
 	st-util -p 4242
 gdb: # opens a gdb session using the running gdb server
-	gdb $(BUILD_DIR)/$(TARGET).elf
+	gdb-multiarch $(BUILD_DIR)/$(TARGET).elf
 console1: # opens the port connected to STM32 board’s st-link UART, default 115200 8N1 settings with Hardware Flow control disabled
 	minicom -D /dev/ttyACM0
 console2: # opens the port connected to STM32 board’s st-link UART, default 115200 8N1 settings with Hardware Flow control disabled

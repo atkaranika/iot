@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccOt1Swd.s 			page 1
+ARM GAS  /tmp/cczNaWNn.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
   28:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****          (+) Services HAL APIs
   29:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
   30:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   @endverbatim
-ARM GAS  /tmp/ccOt1Swd.s 			page 2
+ARM GAS  /tmp/cczNaWNn.s 			page 2
 
 
   31:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   ******************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
   85:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
   86:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /* Private function prototypes -----------------------------------------------*/
   87:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /* Exported functions --------------------------------------------------------*/
-ARM GAS  /tmp/ccOt1Swd.s 			page 3
+ARM GAS  /tmp/cczNaWNn.s 			page 3
 
 
   88:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  142:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** HAL_StatusTypeDef HAL_Init(void)
  143:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
  144:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   HAL_StatusTypeDef  status = HAL_OK;
-ARM GAS  /tmp/ccOt1Swd.s 			page 4
+ARM GAS  /tmp/cczNaWNn.s 			page 4
 
 
  145:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   /* Configure Flash prefetch, Instruction cache, Data cache */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  199:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  200:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   __HAL_RCC_AHB2_FORCE_RESET();
  201:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   __HAL_RCC_AHB2_RELEASE_RESET();
-ARM GAS  /tmp/ccOt1Swd.s 			page 5
+ARM GAS  /tmp/cczNaWNn.s 			page 5
 
 
  202:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  233:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** }
   54              		.loc 1 233 1 view .LVU3
   55 0000 7047     		bx	lr
-ARM GAS  /tmp/ccOt1Swd.s 			page 6
+ARM GAS  /tmp/cczNaWNn.s 			page 6
 
 
   56              		.cfi_endproc
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
   26:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
   27:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****     [..]
   28:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****       Workarounds:
-ARM GAS  /tmp/ccOt1Swd.s 			page 7
+ARM GAS  /tmp/cczNaWNn.s 			page 7
 
 
   29:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****       (#) For AHB & APB peripherals, a dummy read to the peripheral register has been
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
   83:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(TSC)
   84:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_AHB1_GRP1_PERIPH_TSC            RCC_AHB1ENR_TSCEN
   85:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif
-ARM GAS  /tmp/ccOt1Swd.s 			page 8
+ARM GAS  /tmp/cczNaWNn.s 			page 8
 
 
   86:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  140:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_WWDG           RCC_APB1ENR1_WWDGEN
  141:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(SPI2)
  142:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_SPI2           RCC_APB1ENR1_SPI2EN
-ARM GAS  /tmp/ccOt1Swd.s 			page 9
+ARM GAS  /tmp/cczNaWNn.s 			page 9
 
 
  143:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  197:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /** @defgroup BUS_LL_EC_APB3_GRP1_PERIPH  APB3 GRP1 PERIPH
  198:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @{
  199:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
-ARM GAS  /tmp/ccOt1Swd.s 			page 10
+ARM GAS  /tmp/cczNaWNn.s 			page 10
 
 
  200:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB3_GRP1_PERIPH_ALL            (0xFFFFFFFFU)
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  254:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_AHB3_GRP1_PERIPH_IPCC         RCC_C2AHB3ENR_IPCCEN
  255:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_AHB3_GRP1_PERIPH_FLASH        RCC_C2AHB3ENR_FLASHEN
  256:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_AHB3_GRP1_PERIPH_SRAM2        RCC_C2AHB3SMENR_SRAM2SMEN
-ARM GAS  /tmp/ccOt1Swd.s 			page 11
+ARM GAS  /tmp/cczNaWNn.s 			page 11
 
 
  257:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  311:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif
  312:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(SAI1)
  313:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_SAI1         RCC_C2APB2ENR_SAI1EN
-ARM GAS  /tmp/ccOt1Swd.s 			page 12
+ARM GAS  /tmp/cczNaWNn.s 			page 12
 
 
  314:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  368:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
  369:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   tmpreg = READ_BIT(RCC->AHB1ENR, Periphs);
  370:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
-ARM GAS  /tmp/ccOt1Swd.s 			page 13
+ARM GAS  /tmp/cczNaWNn.s 			page 13
 
 
  371:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  425:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMA2 (*)
  426:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMAMUX1
  427:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_CRC
-ARM GAS  /tmp/ccOt1Swd.s 			page 14
+ARM GAS  /tmp/cczNaWNn.s 			page 14
 
 
  428:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_TSC
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  482:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   tmpreg = READ_BIT(RCC->AHB1SMENR, Periphs);
  483:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
  484:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
-ARM GAS  /tmp/ccOt1Swd.s 			page 15
+ARM GAS  /tmp/cczNaWNn.s 			page 15
 
 
  485:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  539:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_AHB2_GRP1_EnableClock(uint32_t Periphs)
  540:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
  541:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   __IO uint32_t tmpreg;
-ARM GAS  /tmp/ccOt1Swd.s 			page 16
+ARM GAS  /tmp/cczNaWNn.s 			page 16
 
 
  542:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   SET_BIT(RCC->AHB2ENR, Periphs);
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  596:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
  597:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_AHB2_GRP1_DisableClock(uint32_t Periphs)
  598:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
-ARM GAS  /tmp/ccOt1Swd.s 			page 17
+ARM GAS  /tmp/cczNaWNn.s 			page 17
 
 
  599:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB2ENR, Periphs);
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  653:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_AHB2_GRP1_ReleaseReset(uint32_t Periphs)
  654:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
  655:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB2RSTR, Periphs);
-ARM GAS  /tmp/ccOt1Swd.s 			page 18
+ARM GAS  /tmp/cczNaWNn.s 			page 18
 
 
  656:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  710:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
  711:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_AHB2_GRP1_DisableClockSleep(uint32_t Periphs)
  712:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
-ARM GAS  /tmp/ccOt1Swd.s 			page 19
+ARM GAS  /tmp/cczNaWNn.s 			page 19
 
 
  713:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB2SMENR, Periphs);
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  767:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_HSEM
  768:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_IPCC
  769:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_FLASH
-ARM GAS  /tmp/ccOt1Swd.s 			page 20
+ARM GAS  /tmp/cczNaWNn.s 			page 20
 
 
  770:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  824:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_AHB3_GRP1_ForceReset(uint32_t Periphs)
  825:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
  826:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   SET_BIT(RCC->AHB3RSTR, Periphs);
-ARM GAS  /tmp/ccOt1Swd.s 			page 21
+ARM GAS  /tmp/cczNaWNn.s 			page 21
 
 
  827:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  881:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
  882:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
  883:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @brief  Disable AHB3 peripherals clock during Low Power (Sleep) mode.
-ARM GAS  /tmp/ccOt1Swd.s 			page 22
+ARM GAS  /tmp/cczNaWNn.s 			page 22
 
 
  884:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @rmtoll AHB3SMENR    QUADSPISMEN   LL_AHB3_GRP1_DisableClockSleep\n
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  938:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
  939:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_APB1_GRP1_EnableClock(uint32_t Periphs)
  940:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
-ARM GAS  /tmp/ccOt1Swd.s 			page 23
+ARM GAS  /tmp/cczNaWNn.s 			page 23
 
 
  941:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   __IO uint32_t tmpreg;
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  995:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   return ((READ_BIT(RCC->APB1ENR1, Periphs) == (Periphs)) ? 1UL : 0UL);
  996:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
  997:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
-ARM GAS  /tmp/ccOt1Swd.s 			page 24
+ARM GAS  /tmp/cczNaWNn.s 			page 24
 
 
  998:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1052:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
 1053:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_APB1_GRP2_DisableClock(uint32_t Periphs)
 1054:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
-ARM GAS  /tmp/ccOt1Swd.s 			page 25
+ARM GAS  /tmp/cczNaWNn.s 			page 25
 
 
 1055:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->APB1ENR2, Periphs);
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1094:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
 1095:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @retval None
 1096:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
-ARM GAS  /tmp/ccOt1Swd.s 			page 26
+ARM GAS  /tmp/cczNaWNn.s 			page 26
 
 
 1097:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_APB1_GRP2_ForceReset(uint32_t Periphs)
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  118              	.LVL3:
  119              		.loc 2 1127 3 is_stmt 0 view .LVU19
  120              	.LBE81:
-ARM GAS  /tmp/ccOt1Swd.s 			page 27
+ARM GAS  /tmp/cczNaWNn.s 			page 27
 
 
  121              	.LBE80:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1162:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_WWDG
 1163:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_SPI2 (*)
 1164:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_I2C1
-ARM GAS  /tmp/ccOt1Swd.s 			page 28
+ARM GAS  /tmp/cczNaWNn.s 			page 28
 
 
 1165:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_I2C3 (*)
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1219:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_I2C3 (*)
 1220:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_CRS (*)
 1221:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_USB (*)
-ARM GAS  /tmp/ccOt1Swd.s 			page 29
+ARM GAS  /tmp/cczNaWNn.s 			page 29
 
 
 1222:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_LPTIM1
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1276:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   __IO uint32_t tmpreg;
 1277:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   SET_BIT(RCC->APB2ENR, Periphs);
 1278:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
-ARM GAS  /tmp/ccOt1Swd.s 			page 30
+ARM GAS  /tmp/cczNaWNn.s 			page 30
 
 
 1279:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   tmpreg = READ_BIT(RCC->APB2ENR, Periphs);
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1333:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
 1334:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @brief  Force APB2 peripherals reset.
 1335:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @rmtoll APB2RSTR     ADCRST        LL_APB2_GRP1_ForceReset\n
-ARM GAS  /tmp/ccOt1Swd.s 			page 31
+ARM GAS  /tmp/cczNaWNn.s 			page 31
 
 
 1336:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         APB2RSTR     TIM1RST       LL_APB2_GRP1_ForceReset\n
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1377:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
 1378:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @retval None
 1379:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
-ARM GAS  /tmp/ccOt1Swd.s 			page 32
+ARM GAS  /tmp/cczNaWNn.s 			page 32
 
 
 1380:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_APB2_GRP1_ReleaseReset(uint32_t Periphs)
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1421:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         APB2SMENR    TIM17SMEN     LL_APB2_GRP1_DisableClockSleep\n
 1422:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         APB2SMENR    SAI1SMEN      LL_APB2_GRP1_DisableClockSleep
 1423:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
-ARM GAS  /tmp/ccOt1Swd.s 			page 33
+ARM GAS  /tmp/cczNaWNn.s 			page 33
 
 
 1424:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB2_GRP1_PERIPH_ADC (*)
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1465:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
 1466:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_APB3_GRP1_ReleaseReset(uint32_t Periphs)
  174              		.loc 2 1466 22 view .LVU38
-ARM GAS  /tmp/ccOt1Swd.s 			page 34
+ARM GAS  /tmp/cczNaWNn.s 			page 34
 
 
  175              	.LBB91:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  627:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
  216              		.loc 2 627 3 is_stmt 0 view .LVU52
  217              	.LBE97:
-ARM GAS  /tmp/ccOt1Swd.s 			page 35
+ARM GAS  /tmp/cczNaWNn.s 			page 35
 
 
  218              	.LBE96:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  258              		.loc 1 210 3 view .LVU66
  211:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  259              		.loc 1 211 1 is_stmt 0 view .LVU67
-ARM GAS  /tmp/ccOt1Swd.s 			page 36
+ARM GAS  /tmp/cczNaWNn.s 			page 36
 
 
  260 0048 2046     		mov	r0, r4
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  263:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****         HAL_NVIC_SetPriority(SysTick_IRQn, TickPriority, 0U);
  264:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****         uwTickPrio = TickPriority;
  265:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****       }
-ARM GAS  /tmp/ccOt1Swd.s 			page 37
+ARM GAS  /tmp/cczNaWNn.s 			page 37
 
 
  266:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****       else
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  316              		.loc 1 258 8 view .LVU82
  317 0026 68B9     		cbnz	r0, .L8
  261:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****       {
-ARM GAS  /tmp/ccOt1Swd.s 			page 38
+ARM GAS  /tmp/cczNaWNn.s 			page 38
 
 
  318              		.loc 1 261 7 is_stmt 1 view .LVU83
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  366              	.LFB950:
  143:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   HAL_StatusTypeDef  status = HAL_OK;
  367              		.loc 1 143 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccOt1Swd.s 			page 39
+ARM GAS  /tmp/cczNaWNn.s 			page 39
 
 
  368              		.cfi_startproc
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  411              		.align	2
  412              	.L23:
  413 0028 00400058 		.word	1476411392
-ARM GAS  /tmp/ccOt1Swd.s 			page 40
+ARM GAS  /tmp/cczNaWNn.s 			page 40
 
 
  414              		.cfi_endproc
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  432              		.loc 1 321 3 view .LVU107
  433              		.loc 1 321 13 is_stmt 0 view .LVU108
  434 0000 034B     		ldr	r3, .L26
-ARM GAS  /tmp/ccOt1Swd.s 			page 41
+ARM GAS  /tmp/cczNaWNn.s 			page 41
 
 
  435 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  480              		.align	1
  481              		.global	HAL_GetTickPrio
  482              		.syntax unified
-ARM GAS  /tmp/ccOt1Swd.s 			page 42
+ARM GAS  /tmp/cczNaWNn.s 			page 42
 
 
  483              		.thumb
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  524              		.cfi_def_cfa_offset 8
  525              		.cfi_offset 4, -8
  526              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccOt1Swd.s 			page 43
+ARM GAS  /tmp/cczNaWNn.s 			page 43
 
 
  350:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   HAL_StatusTypeDef status  = HAL_OK;
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  551              		.loc 1 364 5 is_stmt 1 view .LVU132
  364:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  552              		.loc 1 364 14 is_stmt 0 view .LVU133
-ARM GAS  /tmp/ccOt1Swd.s 			page 44
+ARM GAS  /tmp/cczNaWNn.s 			page 44
 
 
  553 0010 054B     		ldr	r3, .L39+4
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  595 0004 7047     		bx	lr
  596              	.L43:
  597 0006 00BF     		.align	2
-ARM GAS  /tmp/ccOt1Swd.s 			page 45
+ARM GAS  /tmp/cczNaWNn.s 			page 45
 
 
  598              	.L42:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  635              		.loc 1 402 5 view .LVU148
  636              		.loc 1 402 8 is_stmt 0 view .LVU149
  637 000a B4F1FF3F 		cmp	r4, #-1
-ARM GAS  /tmp/ccOt1Swd.s 			page 46
+ARM GAS  /tmp/cczNaWNn.s 			page 46
 
 
  638 000e 02D0     		beq	.L46
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  415:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @note In the default implementation , SysTick timer is the source of time base. It is
  416:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *       used to generate interrupts at regular time intervals. Once HAL_SuspendTick()
  417:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *       is called, the SysTick interrupt will be disabled and so Tick increment
-ARM GAS  /tmp/ccOt1Swd.s 			page 47
+ARM GAS  /tmp/cczNaWNn.s 			page 47
 
 
  418:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *       is suspended.
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  711              		@ link register save eliminated.
  441:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   /* Enable SysTick Interrupt */
  442:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   SET_BIT(SysTick->CTRL,SysTick_CTRL_TICKINT_Msk);
-ARM GAS  /tmp/ccOt1Swd.s 			page 48
+ARM GAS  /tmp/cczNaWNn.s 			page 48
 
 
  712              		.loc 1 442 3 view .LVU164
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  455:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @brief  Returns the device revision identifier.
  456:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @retval Device revision identifier
  457:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   */
-ARM GAS  /tmp/ccOt1Swd.s 			page 49
+ARM GAS  /tmp/cczNaWNn.s 			page 49
 
 
  458:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** uint32_t HAL_GetREVID(void)
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
   43:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
   44:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /** @addtogroup STM32WBxx_LL_Driver
   45:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @{
-ARM GAS  /tmp/ccOt1Swd.s 			page 50
+ARM GAS  /tmp/cczNaWNn.s 			page 50
 
 
   46:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  100:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_I2C_FASTMODEPLUS_I2C1         SYSCFG_CFGR1_I2C1_FMP    /*!< Enable Fast Mode Plus
  101:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #if defined(I2C3)
  102:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_I2C_FASTMODEPLUS_I2C3         SYSCFG_CFGR1_I2C3_FMP    /*!< Enable Fast Mode Plus
-ARM GAS  /tmp/ccOt1Swd.s 			page 51
+ARM GAS  /tmp/cczNaWNn.s 			page 51
 
 
  103:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #endif
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  157:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @}
  158:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
  159:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
-ARM GAS  /tmp/ccOt1Swd.s 			page 52
+ARM GAS  /tmp/cczNaWNn.s 			page 52
 
 
  160:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /** @defgroup SYSTEM_LL_EC_SRAM2WRP SYSCFG SRAM2 WRITE PROTECTION
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  214:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_SRAM2WRP_PAGE49               SYSCFG_SWPR2_PAGE49      /*!< SRAM2B Write protecti
  215:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_SRAM2WRP_PAGE50               SYSCFG_SWPR2_PAGE50      /*!< SRAM2B Write protecti
  216:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_SRAM2WRP_PAGE51               SYSCFG_SWPR2_PAGE51      /*!< SRAM2B Write protecti
-ARM GAS  /tmp/ccOt1Swd.s 			page 53
+ARM GAS  /tmp/cczNaWNn.s 			page 53
 
 
  217:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_SRAM2WRP_PAGE52               SYSCFG_SWPR2_PAGE52      /*!< SRAM2B Write protecti
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  271:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP1_RTCWKUP               SYSCFG_C2IMR1_RTCWKUPIM  /*!< Enabling of interrupt
  272:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP1_RTCALARM              SYSCFG_C2IMR1_RTCALARMIM /*!< Enabling of interrupt
  273:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP1_RCC                   SYSCFG_C2IMR1_RCCIM      /*!< Enabling of interrupt
-ARM GAS  /tmp/ccOt1Swd.s 			page 54
+ARM GAS  /tmp/cczNaWNn.s 			page 54
 
 
  274:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP1_FLASH                 SYSCFG_C2IMR1_FLASHIM    /*!< Enabling of interrupt
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  328:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP2_LCD                   SYSCFG_C2IMR2_LCDIM      /*!< Enabling of interrupt
  329:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #endif
  330:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  /tmp/ccOt1Swd.s 			page 55
+ARM GAS  /tmp/cczNaWNn.s 			page 55
 
 
  331:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @}
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  385:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
  386:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /** @defgroup SYSTEM_LL_EC_C2_APB1_GRP2_STOP_IP DBGMCU CPU2 APB1 GRP2 STOP IP
  387:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @{
-ARM GAS  /tmp/ccOt1Swd.s 			page 56
+ARM GAS  /tmp/cczNaWNn.s 			page 56
 
 
  388:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  442:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @}
  443:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
  444:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
-ARM GAS  /tmp/ccOt1Swd.s 			page 57
+ARM GAS  /tmp/cczNaWNn.s 			page 57
 
 
  445:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  499:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         usage with ADC.
  500:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll SYSCFG_CFGR1 BOOSTEN       LL_SYSCFG_EnableAnalogBooster
  501:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
-ARM GAS  /tmp/ccOt1Swd.s 			page 58
+ARM GAS  /tmp/cczNaWNn.s 			page 58
 
 
  502:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  556:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_CFGR1 I2Cx_FMP      LL_SYSCFG_EnableFastModePlus
  557:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @param  ConfigFastModePlus This parameter can be a combination of the following values:
  558:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_I2C_FASTMODEPLUS_PB6
-ARM GAS  /tmp/ccOt1Swd.s 			page 59
+ARM GAS  /tmp/cczNaWNn.s 			page 59
 
 
  559:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_I2C_FASTMODEPLUS_PB7
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  613:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
  614:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_SYSCFG_EnableIT_FPU_UFC(void)
  615:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** {
-ARM GAS  /tmp/ccOt1Swd.s 			page 60
+ARM GAS  /tmp/cczNaWNn.s 			page 60
 
 
  616:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   SET_BIT(SYSCFG->CFGR1, SYSCFG_CFGR1_FPU_IE_2);
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  670:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Disable Floating Point Unit Underflow Interrupt
  671:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll SYSCFG_CFGR1 FPU_IE_2      LL_SYSCFG_DisableIT_FPU_UFC
  672:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
-ARM GAS  /tmp/ccOt1Swd.s 			page 61
+ARM GAS  /tmp/cczNaWNn.s 			page 61
 
 
  673:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  727:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
  728:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
  729:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  /tmp/ccOt1Swd.s 			page 62
+ARM GAS  /tmp/cczNaWNn.s 			page 62
 
 
  730:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Check if Floating Point Unit Underflow Interrupt source is enabled or disabled.
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  784:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE0
  785:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE1
  786:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE2
-ARM GAS  /tmp/ccOt1Swd.s 			page 63
+ARM GAS  /tmp/cczNaWNn.s 			page 63
 
 
  787:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE3
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  841:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
  842:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
  843:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  /tmp/ccOt1Swd.s 			page 64
+ARM GAS  /tmp/cczNaWNn.s 			page 64
 
 
  844:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Enable SRAM2 Erase (starts a hardware SRAM2 erase operation. This bit is
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  898:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_TIMBREAK_LOCKUP
  899:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
  900:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
-ARM GAS  /tmp/ccOt1Swd.s 			page 65
+ARM GAS  /tmp/cczNaWNn.s 			page 65
 
 
  901:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_SYSCFG_SetTIMBreakInputs(uint32_t Break)
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  955:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE7
  956:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE8
  957:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE9
-ARM GAS  /tmp/ccOt1Swd.s 			page 66
+ARM GAS  /tmp/cczNaWNn.s 			page 66
 
 
  958:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE10
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1012:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE50
 1013:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE51
 1014:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE52
-ARM GAS  /tmp/ccOt1Swd.s 			page 67
+ARM GAS  /tmp/cczNaWNn.s 			page 67
 
 
 1015:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE53
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1069:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_GRP1_EXTI8
 1070:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_GRP1_EXTI9
 1071:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_GRP1_EXTI10
-ARM GAS  /tmp/ccOt1Swd.s 			page 68
+ARM GAS  /tmp/cczNaWNn.s 			page 68
 
 
 1072:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_GRP1_EXTI11
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1126:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
 1127:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
 1128:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  /tmp/ccOt1Swd.s 			page 69
+ARM GAS  /tmp/cczNaWNn.s 			page 69
 
 
 1129:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Disable CPU1 Interrupt Mask
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1183:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_GRP2_IsEnabledIT(uint32_t Interrupt)
 1184:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** {
 1185:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   return ((READ_BIT(SYSCFG->IMR2, Interrupt) != (Interrupt)) ? 1UL : 0UL);
-ARM GAS  /tmp/ccOt1Swd.s 			page 70
+ARM GAS  /tmp/cczNaWNn.s 			page 70
 
 
 1186:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1240:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_C2IMR2  PVM3IM      LL_C2_SYSCFG_GRP2_EnableIT\n
 1241:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_C2IMR2  PVDIM       LL_C2_SYSCFG_GRP2_EnableIT\n
 1242:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_C2IMR2  TSCIM       LL_C2_SYSCFG_GRP2_EnableIT\n
-ARM GAS  /tmp/ccOt1Swd.s 			page 71
+ARM GAS  /tmp/cczNaWNn.s 			page 71
 
 
 1243:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_C2IMR2  LCDIM       LL_C2_SYSCFG_GRP2_EnableIT
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1297:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP1_EXTI1
 1298:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP1_EXTI2
 1299:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP1_EXTI3
-ARM GAS  /tmp/ccOt1Swd.s 			page 72
+ARM GAS  /tmp/cczNaWNn.s 			page 72
 
 
 1300:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP1_EXTI4
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1354:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
 1355:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
 1356:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  /tmp/ccOt1Swd.s 			page 73
+ARM GAS  /tmp/cczNaWNn.s 			page 73
 
 
 1357:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Indicate if CPU2 Interrupt Mask is enabled
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1411:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_C2IMR2  LCDIM       LL_C2_SYSCFG_GRP2_IsEnabledIT
 1412:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @param  Interrupt This parameter can be one of the following values:
 1413:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_DMA1CH1
-ARM GAS  /tmp/ccOt1Swd.s 			page 74
+ARM GAS  /tmp/cczNaWNn.s 			page 74
 
 
 1414:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_DMA1CH2
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1468:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SECURE_ACCESS_RNG
 1469:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
 1470:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
-ARM GAS  /tmp/ccOt1Swd.s 			page 75
+ARM GAS  /tmp/cczNaWNn.s 			page 75
 
 
 1471:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_SYSCFG_DisableSecurityAccess(uint32_t SecurityAccess)
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1523:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** {
 1524:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   return (uint32_t)(READ_BIT(DBGMCU->IDCODE, DBGMCU_IDCODE_REV_ID) >> DBGMCU_IDCODE_REV_ID_Pos);
  769              		.loc 3 1524 3 view .LVU172
-ARM GAS  /tmp/ccOt1Swd.s 			page 76
+ARM GAS  /tmp/cczNaWNn.s 			page 76
 
 
  770              		.loc 3 1524 21 is_stmt 0 view .LVU173
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  813 0008 7047     		bx	lr
  814              	.L62:
  815 000a 00BF     		.align	2
-ARM GAS  /tmp/ccOt1Swd.s 			page 77
+ARM GAS  /tmp/cczNaWNn.s 			page 77
 
 
  816              	.L61:
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  858              		.loc 1 486 1 is_stmt 1 view -0
  859              		.cfi_startproc
  860              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccOt1Swd.s 			page 78
+ARM GAS  /tmp/cczNaWNn.s 			page 78
 
 
  861              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  907              		.thumb_func
  908              		.fpu fpv4-sp-d16
  910              	HAL_DBGMCU_EnableDBGSleepMode:
-ARM GAS  /tmp/ccOt1Swd.s 			page 79
+ARM GAS  /tmp/cczNaWNn.s 			page 79
 
 
  911              	.LFB969:
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  927              	.LBE109:
  928              	.LBE108:
  526:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** }
-ARM GAS  /tmp/ccOt1Swd.s 			page 80
+ARM GAS  /tmp/cczNaWNn.s 			page 80
 
 
  929              		.loc 1 526 1 is_stmt 0 view .LVU194
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  966 000a 7047     		bx	lr
  967              	.L77:
  968              		.align	2
-ARM GAS  /tmp/ccOt1Swd.s 			page 81
+ARM GAS  /tmp/cczNaWNn.s 			page 81
 
 
  969              	.L76:
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1006 000c 002004E0 		.word	-536600576
  1007              		.cfi_endproc
  1008              	.LFE971:
-ARM GAS  /tmp/ccOt1Swd.s 			page 82
+ARM GAS  /tmp/cczNaWNn.s 			page 82
 
 
  1010              		.section	.text.HAL_DBGMCU_DisableDBGStopMode,"ax",%progbits
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1047              		.align	1
  1048              		.global	HAL_DBGMCU_EnableDBGStandbyMode
  1049              		.syntax unified
-ARM GAS  /tmp/ccOt1Swd.s 			page 83
+ARM GAS  /tmp/cczNaWNn.s 			page 83
 
 
  1050              		.thumb
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1087              		.thumb_func
  1088              		.fpu fpv4-sp-d16
  1090              	HAL_DBGMCU_DisableDBGStandbyMode:
-ARM GAS  /tmp/ccOt1Swd.s 			page 84
+ARM GAS  /tmp/cczNaWNn.s 			page 84
 
 
  1091              	.LFB974:
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  572:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  573:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /**
  574:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @}
-ARM GAS  /tmp/ccOt1Swd.s 			page 85
+ARM GAS  /tmp/cczNaWNn.s 			page 85
 
 
  575:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   */
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  607:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   /* Starts a hardware SRAM2 erase operation*/
  608:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   __HAL_SYSCFG_SRAM2_ERASE();
  1147              		.loc 1 608 3 view .LVU225
-ARM GAS  /tmp/ccOt1Swd.s 			page 86
+ARM GAS  /tmp/cczNaWNn.s 			page 86
 
 
  1148              	.LBB122:
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1189 0002 9369     		ldr	r3, [r2, #24]
  1190 0004 43F00043 		orr	r3, r3, #-2147483648
  1191 0008 9361     		str	r3, [r2, #24]
-ARM GAS  /tmp/ccOt1Swd.s 			page 87
+ARM GAS  /tmp/cczNaWNn.s 			page 87
 
 
  1192              	.LBE125:
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1235              	.LBE126:
  629:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** }
  1236              		.loc 1 629 1 view .LVU240
-ARM GAS  /tmp/ccOt1Swd.s 			page 88
+ARM GAS  /tmp/cczNaWNn.s 			page 88
 
 
  1237 000e 7047     		bx	lr
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  667:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /**
  668:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @brief Configure the internal voltage reference buffer high impedance mode.
  669:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @param Mode  specifies the high impedance mode
-ARM GAS  /tmp/ccOt1Swd.s 			page 89
+ARM GAS  /tmp/cczNaWNn.s 			page 89
 
 
  670:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *          This parameter can be one of the following values:
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  694:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @retval None
  695:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   */
  696:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** void HAL_SYSCFG_VREFBUF_TrimmingConfig(uint32_t TrimmingValue)
-ARM GAS  /tmp/ccOt1Swd.s 			page 90
+ARM GAS  /tmp/cczNaWNn.s 			page 90
 
 
  697:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1625:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
 1626:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
 1627:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  /tmp/ccOt1Swd.s 			page 91
+ARM GAS  /tmp/cczNaWNn.s 			page 91
 
 
 1628:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Disable the external trigger output
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1682:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
 1683:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_C2_DBGMCU_APB1_GRP1_FreezePeriph(uint32_t Periphs)
 1684:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** {
-ARM GAS  /tmp/ccOt1Swd.s 			page 92
+ARM GAS  /tmp/cczNaWNn.s 			page 92
 
 
 1685:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   SET_BIT(DBGMCU->C2APB1FZR1, Periphs);
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1739:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_DBGMCU_APB1_GRP1_LPTIM1_STOP
 1740:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
 1741:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
-ARM GAS  /tmp/ccOt1Swd.s 			page 93
+ARM GAS  /tmp/cczNaWNn.s 			page 93
 
 
 1742:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_C2_DBGMCU_APB1_GRP1_UnFreezePeriph(uint32_t Periphs)
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1796:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   SET_BIT(DBGMCU->C2APB2FZR, Periphs);
 1797:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
 1798:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
-ARM GAS  /tmp/ccOt1Swd.s 			page 94
+ARM GAS  /tmp/cczNaWNn.s 			page 94
 
 
 1799:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1853:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   CLEAR_BIT(VREFBUF->CSR, VREFBUF_CSR_ENVR);
 1854:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
 1855:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
-ARM GAS  /tmp/ccOt1Swd.s 			page 95
+ARM GAS  /tmp/cczNaWNn.s 			page 95
 
 
 1856:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
 1910:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
 1911:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Get the VREFBUF trimming value for VRS=1 (VREF_SC1)
 1912:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval Between 0 and 0x3F
-ARM GAS  /tmp/ccOt1Swd.s 			page 96
+ARM GAS  /tmp/cczNaWNn.s 			page 96
 
 
 1913:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1309 0006 00BF     		.align	2
  1310              	.L105:
  1311 0008 30000140 		.word	1073807408
-ARM GAS  /tmp/ccOt1Swd.s 			page 97
+ARM GAS  /tmp/cczNaWNn.s 			page 97
 
 
  1312              		.cfi_endproc
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1357              		.loc 1 656 5 is_stmt 1 view .LVU262
  656:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   }
  1358              		.loc 1 656 33 is_stmt 0 view .LVU263
-ARM GAS  /tmp/ccOt1Swd.s 			page 98
+ARM GAS  /tmp/cczNaWNn.s 			page 98
 
 
  1359 0010 064B     		ldr	r3, .L111+4
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  708:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   */
  709:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** HAL_StatusTypeDef HAL_SYSCFG_EnableVREFBUF(void)
  710:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
-ARM GAS  /tmp/ccOt1Swd.s 			page 99
+ARM GAS  /tmp/cczNaWNn.s 			page 99
 
 
  1403              		.loc 1 710 1 is_stmt 1 view -0
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1444              		.loc 1 721 23 view .LVU285
  1445 0020 001B     		subs	r0, r0, r4
  1446              		.loc 1 721 7 view .LVU286
-ARM GAS  /tmp/ccOt1Swd.s 			page 100
+ARM GAS  /tmp/cczNaWNn.s 			page 100
 
 
  1447 0022 0A28     		cmp	r0, #10
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1486              	.LBB135:
 1853:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
  1487              		.loc 3 1853 3 view .LVU294
-ARM GAS  /tmp/ccOt1Swd.s 			page 101
+ARM GAS  /tmp/cczNaWNn.s 			page 101
 
 
  1488 0000 024A     		ldr	r2, .L123
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1530              		.loc 1 749 1 is_stmt 0 view .LVU300
  1531 000a 7047     		bx	lr
  1532              	.L127:
-ARM GAS  /tmp/ccOt1Swd.s 			page 102
+ARM GAS  /tmp/cczNaWNn.s 			page 102
 
 
  1533              		.align	2
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1578              		.syntax unified
  1579              		.thumb
  1580              		.thumb_func
-ARM GAS  /tmp/ccOt1Swd.s 			page 103
+ARM GAS  /tmp/cczNaWNn.s 			page 103
 
 
  1581              		.fpu fpv4-sp-d16
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  775:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @retval None
  776:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   */
  777:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** void HAL_SYSCFG_DisableIOVdd(void)
-ARM GAS  /tmp/ccOt1Swd.s 			page 104
+ARM GAS  /tmp/cczNaWNn.s 			page 104
 
 
  778:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  795:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** void HAL_SYSCFG_EnableSecurityAccess(uint32_t SecurityAccess)
  796:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
  1658              		.loc 1 796 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccOt1Swd.s 			page 105
+ARM GAS  /tmp/cczNaWNn.s 			page 105
 
 
  1659              		.cfi_startproc
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  808:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @param  SecurityAccess This parameter can be a combination of the following values:
  809:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *         @arg @ref HAL_SYSCFG_SECURE_ACCESS_AES1
  810:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *         @arg @ref HAL_SYSCFG_SECURE_ACCESS_AES2
-ARM GAS  /tmp/ccOt1Swd.s 			page 106
+ARM GAS  /tmp/cczNaWNn.s 			page 106
 
 
  811:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *         @arg @ref HAL_SYSCFG_SECURE_ACCESS_PKA
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  824:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @brief  Indicate if access for security IP is enabled
  825:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @param  SecurityAccess This parameter can be one of the following values:
  826:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *         @arg @ref HAL_SYSCFG_SECURE_ACCESS_AES1
-ARM GAS  /tmp/ccOt1Swd.s 			page 107
+ARM GAS  /tmp/cczNaWNn.s 			page 107
 
 
  827:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *         @arg @ref HAL_SYSCFG_SECURE_ACCESS_AES2
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1778              	.LBE151:
  1779              		.cfi_endproc
  1780              	.LFE989:
-ARM GAS  /tmp/ccOt1Swd.s 			page 108
+ARM GAS  /tmp/cczNaWNn.s 			page 108
 
 
  1782              		.global	uwTickFreq
@@ -6445,137 +6445,137 @@ ARM GAS  /tmp/ccOt1Swd.s 			page 1
  1807              		.file 11 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
  1808              		.file 12 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_rcc.h"
  1809              		.file 13 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_cortex.h"
-ARM GAS  /tmp/ccOt1Swd.s 			page 109
+ARM GAS  /tmp/cczNaWNn.s 			page 109
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32wbxx_hal.c
-     /tmp/ccOt1Swd.s:18     .text.HAL_MspInit:0000000000000000 $t
-     /tmp/ccOt1Swd.s:26     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-     /tmp/ccOt1Swd.s:40     .text.HAL_MspDeInit:0000000000000000 $t
-     /tmp/ccOt1Swd.s:47     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
-     /tmp/ccOt1Swd.s:60     .text.HAL_DeInit:0000000000000000 $t
-     /tmp/ccOt1Swd.s:67     .text.HAL_DeInit:0000000000000000 HAL_DeInit
-     /tmp/ccOt1Swd.s:266    .text.HAL_InitTick:0000000000000000 $t
-     /tmp/ccOt1Swd.s:273    .text.HAL_InitTick:0000000000000000 HAL_InitTick
-     /tmp/ccOt1Swd.s:352    .text.HAL_InitTick:0000000000000048 $d
-     /tmp/ccOt1Swd.s:358    .text.HAL_Init:0000000000000000 $t
-     /tmp/ccOt1Swd.s:365    .text.HAL_Init:0000000000000000 HAL_Init
-     /tmp/ccOt1Swd.s:413    .text.HAL_Init:0000000000000028 $d
-     /tmp/ccOt1Swd.s:418    .text.HAL_IncTick:0000000000000000 $t
-     /tmp/ccOt1Swd.s:425    .text.HAL_IncTick:0000000000000000 HAL_IncTick
-     /tmp/ccOt1Swd.s:446    .text.HAL_IncTick:0000000000000010 $d
+     /tmp/cczNaWNn.s:18     .text.HAL_MspInit:0000000000000000 $t
+     /tmp/cczNaWNn.s:26     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+     /tmp/cczNaWNn.s:40     .text.HAL_MspDeInit:0000000000000000 $t
+     /tmp/cczNaWNn.s:47     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
+     /tmp/cczNaWNn.s:60     .text.HAL_DeInit:0000000000000000 $t
+     /tmp/cczNaWNn.s:67     .text.HAL_DeInit:0000000000000000 HAL_DeInit
+     /tmp/cczNaWNn.s:266    .text.HAL_InitTick:0000000000000000 $t
+     /tmp/cczNaWNn.s:273    .text.HAL_InitTick:0000000000000000 HAL_InitTick
+     /tmp/cczNaWNn.s:352    .text.HAL_InitTick:0000000000000048 $d
+     /tmp/cczNaWNn.s:358    .text.HAL_Init:0000000000000000 $t
+     /tmp/cczNaWNn.s:365    .text.HAL_Init:0000000000000000 HAL_Init
+     /tmp/cczNaWNn.s:413    .text.HAL_Init:0000000000000028 $d
+     /tmp/cczNaWNn.s:418    .text.HAL_IncTick:0000000000000000 $t
+     /tmp/cczNaWNn.s:425    .text.HAL_IncTick:0000000000000000 HAL_IncTick
+     /tmp/cczNaWNn.s:446    .text.HAL_IncTick:0000000000000010 $d
                             *COM*:0000000000000004 uwTick
-     /tmp/ccOt1Swd.s:452    .text.HAL_GetTick:0000000000000000 $t
-     /tmp/ccOt1Swd.s:459    .text.HAL_GetTick:0000000000000000 HAL_GetTick
-     /tmp/ccOt1Swd.s:475    .text.HAL_GetTick:0000000000000008 $d
-     /tmp/ccOt1Swd.s:480    .text.HAL_GetTickPrio:0000000000000000 $t
-     /tmp/ccOt1Swd.s:487    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
-     /tmp/ccOt1Swd.s:502    .text.HAL_GetTickPrio:0000000000000008 $d
-     /tmp/ccOt1Swd.s:507    .text.HAL_SetTickFreq:0000000000000000 $t
-     /tmp/ccOt1Swd.s:514    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
-     /tmp/ccOt1Swd.s:571    .text.HAL_SetTickFreq:0000000000000024 $d
-     /tmp/ccOt1Swd.s:577    .text.HAL_GetTickFreq:0000000000000000 $t
-     /tmp/ccOt1Swd.s:584    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
-     /tmp/ccOt1Swd.s:599    .text.HAL_GetTickFreq:0000000000000008 $d
-     /tmp/ccOt1Swd.s:604    .text.HAL_Delay:0000000000000000 $t
-     /tmp/ccOt1Swd.s:611    .text.HAL_Delay:0000000000000000 HAL_Delay
-     /tmp/ccOt1Swd.s:664    .text.HAL_Delay:0000000000000024 $d
-     /tmp/ccOt1Swd.s:669    .text.HAL_SuspendTick:0000000000000000 $t
-     /tmp/ccOt1Swd.s:676    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
-     /tmp/ccOt1Swd.s:693    .text.HAL_SuspendTick:000000000000000c $d
-     /tmp/ccOt1Swd.s:698    .text.HAL_ResumeTick:0000000000000000 $t
-     /tmp/ccOt1Swd.s:705    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
-     /tmp/ccOt1Swd.s:722    .text.HAL_ResumeTick:000000000000000c $d
-     /tmp/ccOt1Swd.s:727    .text.HAL_GetHalVersion:0000000000000000 $t
-     /tmp/ccOt1Swd.s:734    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
-     /tmp/ccOt1Swd.s:749    .text.HAL_GetREVID:0000000000000000 $t
-     /tmp/ccOt1Swd.s:756    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
-     /tmp/ccOt1Swd.s:781    .text.HAL_GetREVID:0000000000000008 $d
-     /tmp/ccOt1Swd.s:786    .text.HAL_GetDEVID:0000000000000000 $t
-     /tmp/ccOt1Swd.s:793    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
-     /tmp/ccOt1Swd.s:817    .text.HAL_GetDEVID:000000000000000c $d
-     /tmp/ccOt1Swd.s:822    .text.HAL_GetUIDw0:0000000000000000 $t
-     /tmp/ccOt1Swd.s:829    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
-     /tmp/ccOt1Swd.s:844    .text.HAL_GetUIDw0:0000000000000008 $d
-     /tmp/ccOt1Swd.s:849    .text.HAL_GetUIDw1:0000000000000000 $t
-     /tmp/ccOt1Swd.s:856    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
-     /tmp/ccOt1Swd.s:871    .text.HAL_GetUIDw1:0000000000000008 $d
-     /tmp/ccOt1Swd.s:876    .text.HAL_GetUIDw2:0000000000000000 $t
-     /tmp/ccOt1Swd.s:883    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
-     /tmp/ccOt1Swd.s:898    .text.HAL_GetUIDw2:0000000000000008 $d
-     /tmp/ccOt1Swd.s:903    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
-ARM GAS  /tmp/ccOt1Swd.s 			page 110
+     /tmp/cczNaWNn.s:452    .text.HAL_GetTick:0000000000000000 $t
+     /tmp/cczNaWNn.s:459    .text.HAL_GetTick:0000000000000000 HAL_GetTick
+     /tmp/cczNaWNn.s:475    .text.HAL_GetTick:0000000000000008 $d
+     /tmp/cczNaWNn.s:480    .text.HAL_GetTickPrio:0000000000000000 $t
+     /tmp/cczNaWNn.s:487    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
+     /tmp/cczNaWNn.s:502    .text.HAL_GetTickPrio:0000000000000008 $d
+     /tmp/cczNaWNn.s:507    .text.HAL_SetTickFreq:0000000000000000 $t
+     /tmp/cczNaWNn.s:514    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
+     /tmp/cczNaWNn.s:571    .text.HAL_SetTickFreq:0000000000000024 $d
+     /tmp/cczNaWNn.s:577    .text.HAL_GetTickFreq:0000000000000000 $t
+     /tmp/cczNaWNn.s:584    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
+     /tmp/cczNaWNn.s:599    .text.HAL_GetTickFreq:0000000000000008 $d
+     /tmp/cczNaWNn.s:604    .text.HAL_Delay:0000000000000000 $t
+     /tmp/cczNaWNn.s:611    .text.HAL_Delay:0000000000000000 HAL_Delay
+     /tmp/cczNaWNn.s:664    .text.HAL_Delay:0000000000000024 $d
+     /tmp/cczNaWNn.s:669    .text.HAL_SuspendTick:0000000000000000 $t
+     /tmp/cczNaWNn.s:676    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
+     /tmp/cczNaWNn.s:693    .text.HAL_SuspendTick:000000000000000c $d
+     /tmp/cczNaWNn.s:698    .text.HAL_ResumeTick:0000000000000000 $t
+     /tmp/cczNaWNn.s:705    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
+     /tmp/cczNaWNn.s:722    .text.HAL_ResumeTick:000000000000000c $d
+     /tmp/cczNaWNn.s:727    .text.HAL_GetHalVersion:0000000000000000 $t
+     /tmp/cczNaWNn.s:734    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
+     /tmp/cczNaWNn.s:749    .text.HAL_GetREVID:0000000000000000 $t
+     /tmp/cczNaWNn.s:756    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
+     /tmp/cczNaWNn.s:781    .text.HAL_GetREVID:0000000000000008 $d
+     /tmp/cczNaWNn.s:786    .text.HAL_GetDEVID:0000000000000000 $t
+     /tmp/cczNaWNn.s:793    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
+     /tmp/cczNaWNn.s:817    .text.HAL_GetDEVID:000000000000000c $d
+     /tmp/cczNaWNn.s:822    .text.HAL_GetUIDw0:0000000000000000 $t
+     /tmp/cczNaWNn.s:829    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
+     /tmp/cczNaWNn.s:844    .text.HAL_GetUIDw0:0000000000000008 $d
+     /tmp/cczNaWNn.s:849    .text.HAL_GetUIDw1:0000000000000000 $t
+     /tmp/cczNaWNn.s:856    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
+     /tmp/cczNaWNn.s:871    .text.HAL_GetUIDw1:0000000000000008 $d
+     /tmp/cczNaWNn.s:876    .text.HAL_GetUIDw2:0000000000000000 $t
+     /tmp/cczNaWNn.s:883    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
+     /tmp/cczNaWNn.s:898    .text.HAL_GetUIDw2:0000000000000008 $d
+     /tmp/cczNaWNn.s:903    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
+ARM GAS  /tmp/cczNaWNn.s 			page 110
 
 
-     /tmp/ccOt1Swd.s:910    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
-     /tmp/ccOt1Swd.s:934    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
-     /tmp/ccOt1Swd.s:939    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
-     /tmp/ccOt1Swd.s:946    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
-     /tmp/ccOt1Swd.s:970    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
-     /tmp/ccOt1Swd.s:975    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
-     /tmp/ccOt1Swd.s:982    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
-     /tmp/ccOt1Swd.s:1006   .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
-     /tmp/ccOt1Swd.s:1011   .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1018   .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
-     /tmp/ccOt1Swd.s:1042   .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
-     /tmp/ccOt1Swd.s:1047   .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1054   .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
-     /tmp/ccOt1Swd.s:1078   .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
-     /tmp/ccOt1Swd.s:1083   .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1090   .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
-     /tmp/ccOt1Swd.s:1114   .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
-     /tmp/ccOt1Swd.s:1119   .text.HAL_SYSCFG_SRAM2Erase:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1126   .text.HAL_SYSCFG_SRAM2Erase:0000000000000000 HAL_SYSCFG_SRAM2Erase
-     /tmp/ccOt1Swd.s:1163   .text.HAL_SYSCFG_SRAM2Erase:0000000000000014 $d
-     /tmp/ccOt1Swd.s:1168   .text.HAL_SYSCFG_DisableSRAMFetch:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1175   .text.HAL_SYSCFG_DisableSRAMFetch:0000000000000000 HAL_SYSCFG_DisableSRAMFetch
-     /tmp/ccOt1Swd.s:1199   .text.HAL_SYSCFG_DisableSRAMFetch:000000000000000c $d
-     /tmp/ccOt1Swd.s:1204   .text.HAL_SYSCFG_IsEnabledSRAMFetch:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1211   .text.HAL_SYSCFG_IsEnabledSRAMFetch:0000000000000000 HAL_SYSCFG_IsEnabledSRAMFetch
-     /tmp/ccOt1Swd.s:1241   .text.HAL_SYSCFG_IsEnabledSRAMFetch:0000000000000010 $d
-     /tmp/ccOt1Swd.s:1246   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1253   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000000 HAL_SYSCFG_VREFBUF_HighImpedanceConfig
-     /tmp/ccOt1Swd.s:1273   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000010 $d
-     /tmp/ccOt1Swd.s:1278   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1285   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000000 HAL_SYSCFG_VREFBUF_TrimmingConfig
-     /tmp/ccOt1Swd.s:1311   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000008 $d
-     /tmp/ccOt1Swd.s:1316   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1323   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000000 HAL_SYSCFG_VREFBUF_VoltageScalingConfig
-     /tmp/ccOt1Swd.s:1387   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000028 $d
-     /tmp/ccOt1Swd.s:1394   .text.HAL_SYSCFG_EnableVREFBUF:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1401   .text.HAL_SYSCFG_EnableVREFBUF:0000000000000000 HAL_SYSCFG_EnableVREFBUF
-     /tmp/ccOt1Swd.s:1463   .text.HAL_SYSCFG_EnableVREFBUF:0000000000000030 $d
-     /tmp/ccOt1Swd.s:1468   .text.HAL_SYSCFG_DisableVREFBUF:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1475   .text.HAL_SYSCFG_DisableVREFBUF:0000000000000000 HAL_SYSCFG_DisableVREFBUF
-     /tmp/ccOt1Swd.s:1499   .text.HAL_SYSCFG_DisableVREFBUF:000000000000000c $d
-     /tmp/ccOt1Swd.s:1504   .text.HAL_SYSCFG_EnableIOBooster:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1511   .text.HAL_SYSCFG_EnableIOBooster:0000000000000000 HAL_SYSCFG_EnableIOBooster
-     /tmp/ccOt1Swd.s:1535   .text.HAL_SYSCFG_EnableIOBooster:000000000000000c $d
-     /tmp/ccOt1Swd.s:1540   .text.HAL_SYSCFG_DisableIOBooster:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1547   .text.HAL_SYSCFG_DisableIOBooster:0000000000000000 HAL_SYSCFG_DisableIOBooster
-     /tmp/ccOt1Swd.s:1571   .text.HAL_SYSCFG_DisableIOBooster:000000000000000c $d
-     /tmp/ccOt1Swd.s:1576   .text.HAL_SYSCFG_EnableIOVdd:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1583   .text.HAL_SYSCFG_EnableIOVdd:0000000000000000 HAL_SYSCFG_EnableIOVdd
-     /tmp/ccOt1Swd.s:1607   .text.HAL_SYSCFG_EnableIOVdd:000000000000000c $d
-     /tmp/ccOt1Swd.s:1612   .text.HAL_SYSCFG_DisableIOVdd:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1619   .text.HAL_SYSCFG_DisableIOVdd:0000000000000000 HAL_SYSCFG_DisableIOVdd
-     /tmp/ccOt1Swd.s:1643   .text.HAL_SYSCFG_DisableIOVdd:000000000000000c $d
-     /tmp/ccOt1Swd.s:1648   .text.HAL_SYSCFG_EnableSecurityAccess:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1655   .text.HAL_SYSCFG_EnableSecurityAccess:0000000000000000 HAL_SYSCFG_EnableSecurityAccess
-     /tmp/ccOt1Swd.s:1685   .text.HAL_SYSCFG_EnableSecurityAccess:0000000000000010 $d
-     /tmp/ccOt1Swd.s:1690   .text.HAL_SYSCFG_DisableSecurityAccess:0000000000000000 $t
-ARM GAS  /tmp/ccOt1Swd.s 			page 111
+     /tmp/cczNaWNn.s:910    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
+     /tmp/cczNaWNn.s:934    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
+     /tmp/cczNaWNn.s:939    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
+     /tmp/cczNaWNn.s:946    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
+     /tmp/cczNaWNn.s:970    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
+     /tmp/cczNaWNn.s:975    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
+     /tmp/cczNaWNn.s:982    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
+     /tmp/cczNaWNn.s:1006   .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
+     /tmp/cczNaWNn.s:1011   .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
+     /tmp/cczNaWNn.s:1018   .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
+     /tmp/cczNaWNn.s:1042   .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
+     /tmp/cczNaWNn.s:1047   .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
+     /tmp/cczNaWNn.s:1054   .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
+     /tmp/cczNaWNn.s:1078   .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
+     /tmp/cczNaWNn.s:1083   .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
+     /tmp/cczNaWNn.s:1090   .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
+     /tmp/cczNaWNn.s:1114   .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
+     /tmp/cczNaWNn.s:1119   .text.HAL_SYSCFG_SRAM2Erase:0000000000000000 $t
+     /tmp/cczNaWNn.s:1126   .text.HAL_SYSCFG_SRAM2Erase:0000000000000000 HAL_SYSCFG_SRAM2Erase
+     /tmp/cczNaWNn.s:1163   .text.HAL_SYSCFG_SRAM2Erase:0000000000000014 $d
+     /tmp/cczNaWNn.s:1168   .text.HAL_SYSCFG_DisableSRAMFetch:0000000000000000 $t
+     /tmp/cczNaWNn.s:1175   .text.HAL_SYSCFG_DisableSRAMFetch:0000000000000000 HAL_SYSCFG_DisableSRAMFetch
+     /tmp/cczNaWNn.s:1199   .text.HAL_SYSCFG_DisableSRAMFetch:000000000000000c $d
+     /tmp/cczNaWNn.s:1204   .text.HAL_SYSCFG_IsEnabledSRAMFetch:0000000000000000 $t
+     /tmp/cczNaWNn.s:1211   .text.HAL_SYSCFG_IsEnabledSRAMFetch:0000000000000000 HAL_SYSCFG_IsEnabledSRAMFetch
+     /tmp/cczNaWNn.s:1241   .text.HAL_SYSCFG_IsEnabledSRAMFetch:0000000000000010 $d
+     /tmp/cczNaWNn.s:1246   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000000 $t
+     /tmp/cczNaWNn.s:1253   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000000 HAL_SYSCFG_VREFBUF_HighImpedanceConfig
+     /tmp/cczNaWNn.s:1273   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000010 $d
+     /tmp/cczNaWNn.s:1278   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000000 $t
+     /tmp/cczNaWNn.s:1285   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000000 HAL_SYSCFG_VREFBUF_TrimmingConfig
+     /tmp/cczNaWNn.s:1311   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000008 $d
+     /tmp/cczNaWNn.s:1316   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000000 $t
+     /tmp/cczNaWNn.s:1323   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000000 HAL_SYSCFG_VREFBUF_VoltageScalingConfig
+     /tmp/cczNaWNn.s:1387   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000028 $d
+     /tmp/cczNaWNn.s:1394   .text.HAL_SYSCFG_EnableVREFBUF:0000000000000000 $t
+     /tmp/cczNaWNn.s:1401   .text.HAL_SYSCFG_EnableVREFBUF:0000000000000000 HAL_SYSCFG_EnableVREFBUF
+     /tmp/cczNaWNn.s:1463   .text.HAL_SYSCFG_EnableVREFBUF:0000000000000030 $d
+     /tmp/cczNaWNn.s:1468   .text.HAL_SYSCFG_DisableVREFBUF:0000000000000000 $t
+     /tmp/cczNaWNn.s:1475   .text.HAL_SYSCFG_DisableVREFBUF:0000000000000000 HAL_SYSCFG_DisableVREFBUF
+     /tmp/cczNaWNn.s:1499   .text.HAL_SYSCFG_DisableVREFBUF:000000000000000c $d
+     /tmp/cczNaWNn.s:1504   .text.HAL_SYSCFG_EnableIOBooster:0000000000000000 $t
+     /tmp/cczNaWNn.s:1511   .text.HAL_SYSCFG_EnableIOBooster:0000000000000000 HAL_SYSCFG_EnableIOBooster
+     /tmp/cczNaWNn.s:1535   .text.HAL_SYSCFG_EnableIOBooster:000000000000000c $d
+     /tmp/cczNaWNn.s:1540   .text.HAL_SYSCFG_DisableIOBooster:0000000000000000 $t
+     /tmp/cczNaWNn.s:1547   .text.HAL_SYSCFG_DisableIOBooster:0000000000000000 HAL_SYSCFG_DisableIOBooster
+     /tmp/cczNaWNn.s:1571   .text.HAL_SYSCFG_DisableIOBooster:000000000000000c $d
+     /tmp/cczNaWNn.s:1576   .text.HAL_SYSCFG_EnableIOVdd:0000000000000000 $t
+     /tmp/cczNaWNn.s:1583   .text.HAL_SYSCFG_EnableIOVdd:0000000000000000 HAL_SYSCFG_EnableIOVdd
+     /tmp/cczNaWNn.s:1607   .text.HAL_SYSCFG_EnableIOVdd:000000000000000c $d
+     /tmp/cczNaWNn.s:1612   .text.HAL_SYSCFG_DisableIOVdd:0000000000000000 $t
+     /tmp/cczNaWNn.s:1619   .text.HAL_SYSCFG_DisableIOVdd:0000000000000000 HAL_SYSCFG_DisableIOVdd
+     /tmp/cczNaWNn.s:1643   .text.HAL_SYSCFG_DisableIOVdd:000000000000000c $d
+     /tmp/cczNaWNn.s:1648   .text.HAL_SYSCFG_EnableSecurityAccess:0000000000000000 $t
+     /tmp/cczNaWNn.s:1655   .text.HAL_SYSCFG_EnableSecurityAccess:0000000000000000 HAL_SYSCFG_EnableSecurityAccess
+     /tmp/cczNaWNn.s:1685   .text.HAL_SYSCFG_EnableSecurityAccess:0000000000000010 $d
+     /tmp/cczNaWNn.s:1690   .text.HAL_SYSCFG_DisableSecurityAccess:0000000000000000 $t
+ARM GAS  /tmp/cczNaWNn.s 			page 111
 
 
-     /tmp/ccOt1Swd.s:1697   .text.HAL_SYSCFG_DisableSecurityAccess:0000000000000000 HAL_SYSCFG_DisableSecurityAccess
-     /tmp/ccOt1Swd.s:1725   .text.HAL_SYSCFG_DisableSecurityAccess:0000000000000010 $d
-     /tmp/ccOt1Swd.s:1730   .text.HAL_SYSCFG_IsEnabledSecurityAccess:0000000000000000 $t
-     /tmp/ccOt1Swd.s:1737   .text.HAL_SYSCFG_IsEnabledSecurityAccess:0000000000000000 HAL_SYSCFG_IsEnabledSecurityAccess
-     /tmp/ccOt1Swd.s:1776   .text.HAL_SYSCFG_IsEnabledSecurityAccess:0000000000000014 $d
-     /tmp/ccOt1Swd.s:1789   .data.uwTickFreq:0000000000000000 uwTickFreq
-     /tmp/ccOt1Swd.s:1796   .data.uwTickPrio:0000000000000000 uwTickPrio
-     /tmp/ccOt1Swd.s:1792   .data.uwTickPrio:0000000000000000 $d
+     /tmp/cczNaWNn.s:1697   .text.HAL_SYSCFG_DisableSecurityAccess:0000000000000000 HAL_SYSCFG_DisableSecurityAccess
+     /tmp/cczNaWNn.s:1725   .text.HAL_SYSCFG_DisableSecurityAccess:0000000000000010 $d
+     /tmp/cczNaWNn.s:1730   .text.HAL_SYSCFG_IsEnabledSecurityAccess:0000000000000000 $t
+     /tmp/cczNaWNn.s:1737   .text.HAL_SYSCFG_IsEnabledSecurityAccess:0000000000000000 HAL_SYSCFG_IsEnabledSecurityAccess
+     /tmp/cczNaWNn.s:1776   .text.HAL_SYSCFG_IsEnabledSecurityAccess:0000000000000014 $d
+     /tmp/cczNaWNn.s:1789   .data.uwTickFreq:0000000000000000 uwTickFreq
+     /tmp/cczNaWNn.s:1796   .data.uwTickPrio:0000000000000000 uwTickPrio
+     /tmp/cczNaWNn.s:1792   .data.uwTickPrio:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_RCC_GetHCLKFreq

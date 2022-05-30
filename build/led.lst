@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc0DNJeH.s 			page 1
+ARM GAS  /tmp/ccuDYJ7R.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc0DNJeH.s 			page 1
   36              	.LCFI0:
   37              		.cfi_def_cfa_offset 8
   38              		.cfi_offset 4, -8
-ARM GAS  /tmp/cc0DNJeH.s 			page 2
+ARM GAS  /tmp/ccuDYJ7R.s 			page 2
 
 
   39              		.cfi_offset 14, -4
@@ -89,19 +89,18 @@ ARM GAS  /tmp/cc0DNJeH.s 			page 1
   57 0012 02AB     		add	r3, sp, #8
   58 0014 03E90300 		stmdb	r3, {r0, r1}
   28:../../lib/led/led.c **** 	// callHAL_GPIO_WritePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState) //
-  29:../../lib/led/led.c **** 	// form stm32wbxx_hal_gpio.c 				
-  30:../../lib/led/led.c **** 	// printf ("%s, %s, %s\n", led_entry.port, led_entry.pin, state);											 //
-  31:../../lib/led/led.c **** 	HAL_GPIO_WritePin(led_entry.port, led_entry.pin, state);
-  59              		.loc 1 31 2 is_stmt 1 view .LVU8
+  29:../../lib/led/led.c **** 	// form stm32wbxx_hal_gpio.c 															 //			
+  30:../../lib/led/led.c **** 	HAL_GPIO_WritePin(led_entry.port, led_entry.pin, state);
+  59              		.loc 1 30 2 is_stmt 1 view .LVU8
   60 0018 2246     		mov	r2, r4
   61 001a BDF80410 		ldrh	r1, [sp, #4]
   62 001e 0098     		ldr	r0, [sp]
   63 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
   64              	.LVL3:
   65              	.L1:
-  32:../../lib/led/led.c **** 	// ARG_UNUSED(led_entry); // TODO: set the value of the target GPIO pin
-  33:../../lib/led/led.c **** }...
-  66              		.loc 1 33 1 is_stmt 0 view .LVU9
+  31:../../lib/led/led.c **** 	// ARG_UNUSED(led_entry); // TODO: set the value of the target GPIO pin
+  32:../../lib/led/led.c **** }...
+  66              		.loc 1 32 1 is_stmt 0 view .LVU9
   67 0024 02B0     		add	sp, sp, #8
   68              	.LCFI2:
   69              		.cfi_remember_state
@@ -118,10 +117,10 @@ ARM GAS  /tmp/cc0DNJeH.s 			page 1
   79              	.LVL5:
   22:../../lib/led/led.c **** 		set_led(LED_RED, state);
   80              		.loc 1 22 3 is_stmt 0 view .LVU11
-ARM GAS  /tmp/cc0DNJeH.s 			page 3
-
-
   81 002a FFF7FEFF 		bl	set_led
+ARM GAS  /tmp/ccuDYJ7R.s 			page 3
+
+
   82              	.LVL6:
   23:../../lib/led/led.c **** 		set_led(LED_GREEN, state);
   83              		.loc 1 23 3 is_stmt 1 view .LVU12
@@ -170,16 +169,16 @@ ARM GAS  /tmp/cc0DNJeH.s 			page 1
  127              		.file 9 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h"
  128              		.file 10 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
  129              		.file 11 "../../lib/led/led.h"
-ARM GAS  /tmp/cc0DNJeH.s 			page 4
+ARM GAS  /tmp/ccuDYJ7R.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 led.c
-     /tmp/cc0DNJeH.s:18     .text.set_led:0000000000000000 $t
-     /tmp/cc0DNJeH.s:26     .text.set_led:0000000000000000 set_led
-     /tmp/cc0DNJeH.s:98     .text.set_led:0000000000000040 $d
-     /tmp/cc0DNJeH.s:108    .data.led_map:0000000000000000 led_map
-     /tmp/cc0DNJeH.s:104    .data.led_map:0000000000000000 $d
+     /tmp/ccuDYJ7R.s:18     .text.set_led:0000000000000000 $t
+     /tmp/ccuDYJ7R.s:26     .text.set_led:0000000000000000 set_led
+     /tmp/ccuDYJ7R.s:98     .text.set_led:0000000000000040 $d
+     /tmp/ccuDYJ7R.s:108    .data.led_map:0000000000000000 led_map
+     /tmp/ccuDYJ7R.s:104    .data.led_map:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
