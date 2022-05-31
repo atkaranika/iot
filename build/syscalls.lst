@@ -1,0 +1,179 @@
+ARM GAS  /tmp/cc4k78qi.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 27, 1
+   3              		.eabi_attribute 28, 1
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"syscalls.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.__io_putchar,"ax",%progbits
+  18              		.align	1
+  19              		.global	__io_putchar
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv4-sp-d16
+  26              	__io_putchar:
+  27              	.LVL0:
+  28              	.LFB950:
+  29              		.file 1 "Core/Src/syscalls.c"
+   1:Core/Src/syscalls.c **** #include "usart.h"
+   2:Core/Src/syscalls.c **** #include "stm32wbxx_hal_uart.h"
+   3:Core/Src/syscalls.c **** 
+   4:Core/Src/syscalls.c **** #define UART_TIMEOUT 1000 // ms
+   5:Core/Src/syscalls.c **** 
+   6:Core/Src/syscalls.c **** int __io_putchar(int ch) {
+  30              		.loc 1 6 26 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 8
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		.loc 1 6 26 is_stmt 0 view .LVU1
+  35 0000 00B5     		push	{lr}
+  36              	.LCFI0:
+  37              		.cfi_def_cfa_offset 4
+  38              		.cfi_offset 14, -4
+  39 0002 83B0     		sub	sp, sp, #12
+  40              	.LCFI1:
+  41              		.cfi_def_cfa_offset 16
+  42 0004 0190     		str	r0, [sp, #4]
+   7:Core/Src/syscalls.c **** 	// TODO: transmit 'ch' byte through ST-LINK UART
+   8:Core/Src/syscalls.c **** 	// apps/sample-app/Core/Src/syscalls.c:  HAL_UART_Transmit(&UartHandle, (uint8_t *)&ch, , 0xFFFF);
+   9:Core/Src/syscalls.c **** 	// UartHandle: apps/sample-app/Core/Src/usart.c UART_HandleTypeDef huart1;
+  10:Core/Src/syscalls.c **** 	HAL_UART_Transmit(&huart1, (uint8_t *)&ch, sizeof((uint8_t )ch), 0xFFFF);
+  43              		.loc 1 10 2 is_stmt 1 view .LVU2
+  44 0006 4FF6FF73 		movw	r3, #65535
+  45 000a 0122     		movs	r2, #1
+  46 000c 01A9     		add	r1, sp, #4
+  47 000e 0348     		ldr	r0, .L3
+  48              	.LVL1:
+ARM GAS  /tmp/cc4k78qi.s 			page 2
+
+
+  49              		.loc 1 10 2 is_stmt 0 view .LVU3
+  50 0010 FFF7FEFF 		bl	HAL_UART_Transmit
+  51              	.LVL2:
+  11:Core/Src/syscalls.c **** 	return ch;
+  52              		.loc 1 11 2 is_stmt 1 view .LVU4
+  12:Core/Src/syscalls.c **** }
+  53              		.loc 1 12 1 is_stmt 0 view .LVU5
+  54 0014 0198     		ldr	r0, [sp, #4]
+  55 0016 03B0     		add	sp, sp, #12
+  56              	.LCFI2:
+  57              		.cfi_def_cfa_offset 4
+  58              		@ sp needed
+  59 0018 5DF804FB 		ldr	pc, [sp], #4
+  60              	.L4:
+  61              		.align	2
+  62              	.L3:
+  63 001c 00000000 		.word	huart1
+  64              		.cfi_endproc
+  65              	.LFE950:
+  67              		.section	.text._write,"ax",%progbits
+  68              		.align	1
+  69              		.global	_write
+  70              		.syntax unified
+  71              		.thumb
+  72              		.thumb_func
+  73              		.fpu fpv4-sp-d16
+  75              	_write:
+  76              	.LVL3:
+  77              	.LFB951:
+  13:Core/Src/syscalls.c **** 
+  14:Core/Src/syscalls.c **** int _write(int file, char *ptr, int len) {
+  78              		.loc 1 14 42 is_stmt 1 view -0
+  79              		.cfi_startproc
+  80              		@ args = 0, pretend = 0, frame = 0
+  81              		@ frame_needed = 0, uses_anonymous_args = 0
+  82              		.loc 1 14 42 is_stmt 0 view .LVU7
+  83 0000 70B5     		push	{r4, r5, r6, lr}
+  84              	.LCFI3:
+  85              		.cfi_def_cfa_offset 16
+  86              		.cfi_offset 4, -16
+  87              		.cfi_offset 5, -12
+  88              		.cfi_offset 6, -8
+  89              		.cfi_offset 14, -4
+  90 0002 0C46     		mov	r4, r1
+  91 0004 1646     		mov	r6, r2
+  15:Core/Src/syscalls.c **** 	int i;
+  92              		.loc 1 15 2 is_stmt 1 view .LVU8
+  16:Core/Src/syscalls.c **** 	for (i = 0; i < len; i++) {
+  93              		.loc 1 16 2 view .LVU9
+  94              	.LVL4:
+  95              		.loc 1 16 9 is_stmt 0 view .LVU10
+  96 0006 0025     		movs	r5, #0
+  97              	.LVL5:
+  98              	.L6:
+  99              		.loc 1 16 14 is_stmt 1 discriminator 1 view .LVU11
+ 100              		.loc 1 16 2 is_stmt 0 discriminator 1 view .LVU12
+ 101 0008 B542     		cmp	r5, r6
+ARM GAS  /tmp/cc4k78qi.s 			page 3
+
+
+ 102 000a 05DA     		bge	.L9
+  17:Core/Src/syscalls.c **** 		__io_putchar(*ptr++);
+ 103              		.loc 1 17 3 is_stmt 1 discriminator 3 view .LVU13
+ 104              	.LVL6:
+ 105              		.loc 1 17 3 is_stmt 0 discriminator 3 view .LVU14
+ 106 000c 14F8010B 		ldrb	r0, [r4], #1	@ zero_extendqisi2
+ 107              	.LVL7:
+ 108              		.loc 1 17 3 discriminator 3 view .LVU15
+ 109 0010 FFF7FEFF 		bl	__io_putchar
+ 110              	.LVL8:
+  16:Core/Src/syscalls.c **** 	for (i = 0; i < len; i++) {
+ 111              		.loc 1 16 23 is_stmt 1 discriminator 3 view .LVU16
+  16:Core/Src/syscalls.c **** 	for (i = 0; i < len; i++) {
+ 112              		.loc 1 16 24 is_stmt 0 discriminator 3 view .LVU17
+ 113 0014 0135     		adds	r5, r5, #1
+ 114              	.LVL9:
+  16:Core/Src/syscalls.c **** 	for (i = 0; i < len; i++) {
+ 115              		.loc 1 16 24 discriminator 3 view .LVU18
+ 116 0016 F7E7     		b	.L6
+ 117              	.L9:
+  18:Core/Src/syscalls.c **** 	}
+  19:Core/Src/syscalls.c **** 	return len;
+ 118              		.loc 1 19 2 is_stmt 1 view .LVU19
+  20:Core/Src/syscalls.c **** }...
+ 119              		.loc 1 20 1 is_stmt 0 view .LVU20
+ 120 0018 3046     		mov	r0, r6
+ 121 001a 70BD     		pop	{r4, r5, r6, pc}
+ 122              		.loc 1 20 1 view .LVU21
+ 123              		.cfi_endproc
+ 124              	.LFE951:
+ 126              		.text
+ 127              	.Letext0:
+ 128              		.file 2 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h"
+ 129              		.file 3 "Drivers/CMSIS/Include/core_cm4.h"
+ 130              		.file 4 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/system_stm32wbxx.h"
+ 131              		.file 5 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h"
+ 132              		.file 6 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_def.h"
+ 133              		.file 7 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h"
+ 134              		.file 8 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_flash.h"
+ 135              		.file 9 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h"
+ 136              		.file 10 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
+ 137              		.file 11 "Core/Inc/usart.h"
+ARM GAS  /tmp/cc4k78qi.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 syscalls.c
+     /tmp/cc4k78qi.s:18     .text.__io_putchar:0000000000000000 $t
+     /tmp/cc4k78qi.s:26     .text.__io_putchar:0000000000000000 __io_putchar
+     /tmp/cc4k78qi.s:63     .text.__io_putchar:000000000000001c $d
+     /tmp/cc4k78qi.s:68     .text._write:0000000000000000 $t
+     /tmp/cc4k78qi.s:75     .text._write:0000000000000000 _write
+
+UNDEFINED SYMBOLS
+HAL_UART_Transmit
+huart1

@@ -1,0 +1,216 @@
+ARM GAS  /tmp/ccNhq6iA.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 27, 1
+   3              		.eabi_attribute 28, 1
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"sample-lib.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.rodata.blink.str1.4,"aMS",%progbits,1
+  18              		.align	2
+  19              	.LC0:
+  20 0000 424C494E 		.ascii	"BLINK!\012\015\000"
+  20      4B210A0D 
+  20      00
+  21 0009 000000   		.align	2
+  22              	.LC1:
+  23 000c 494E4600 		.ascii	"INF\000"
+  24              		.section	.text.blink,"ax",%progbits
+  25              		.align	1
+  26              		.global	blink
+  27              		.arch armv7e-m
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  31              		.fpu fpv4-sp-d16
+  33              	blink:
+  34              	.LFB953:
+  35              		.file 1 "../../lib/sample-lib/sample-lib.c"
+   1:../../lib/sample-lib/sample-lib.c **** #include <stdio.h>
+   2:../../lib/sample-lib/sample-lib.c **** #include "main.h"
+   3:../../lib/sample-lib/sample-lib.c **** #include "led.h"
+   4:../../lib/sample-lib/sample-lib.c **** #include "sample-lib.h"
+   5:../../lib/sample-lib/sample-lib.c **** 
+   6:../../lib/sample-lib/sample-lib.c **** #define BLINK_DURATION 500 // ms
+   7:../../lib/sample-lib/sample-lib.c **** #define BLINK_DELAY 400 // ms
+   8:../../lib/sample-lib/sample-lib.c **** 
+   9:../../lib/sample-lib/sample-lib.c **** void blink() {
+  36              		.loc 1 9 14 view -0
+  37              		.cfi_startproc
+  38              		@ args = 0, pretend = 0, frame = 0
+  39              		@ frame_needed = 0, uses_anonymous_args = 0
+  40 0000 08B5     		push	{r3, lr}
+  41              	.LCFI0:
+  42              		.cfi_def_cfa_offset 8
+  43              		.cfi_offset 3, -8
+  44              		.cfi_offset 14, -4
+  10:../../lib/sample-lib/sample-lib.c **** 	LOG_INF("BLINK!\n\r");
+  45              		.loc 1 10 2 view .LVU1
+  46 0002 174A     		ldr	r2, .L3
+ARM GAS  /tmp/ccNhq6iA.s 			page 2
+
+
+  47 0004 1749     		ldr	r1, .L3+4
+  48 0006 0320     		movs	r0, #3
+  49 0008 FFF7FEFF 		bl	log_level
+  50              	.LVL0:
+  51              		.loc 1 10 23 view .LVU2
+  11:../../lib/sample-lib/sample-lib.c **** 	set_led(LED_ALL, LED_OFF);
+  52              		.loc 1 11 2 view .LVU3
+  53 000c 0021     		movs	r1, #0
+  54 000e FF20     		movs	r0, #255
+  55 0010 FFF7FEFF 		bl	set_led
+  56              	.LVL1:
+  12:../../lib/sample-lib/sample-lib.c **** 	HAL_Delay(BLINK_DURATION / 4);
+  57              		.loc 1 12 2 view .LVU4
+  58 0014 7D20     		movs	r0, #125
+  59 0016 FFF7FEFF 		bl	HAL_Delay
+  60              	.LVL2:
+  13:../../lib/sample-lib/sample-lib.c **** 	set_led(LED_RED, LED_ON);
+  61              		.loc 1 13 2 view .LVU5
+  62 001a 0121     		movs	r1, #1
+  63 001c 0020     		movs	r0, #0
+  64 001e FFF7FEFF 		bl	set_led
+  65              	.LVL3:
+  14:../../lib/sample-lib/sample-lib.c **** 	HAL_Delay(BLINK_DURATION / 4);
+  66              		.loc 1 14 2 view .LVU6
+  67 0022 7D20     		movs	r0, #125
+  68 0024 FFF7FEFF 		bl	HAL_Delay
+  69              	.LVL4:
+  15:../../lib/sample-lib/sample-lib.c **** 	set_led(LED_RED, LED_OFF);
+  70              		.loc 1 15 2 view .LVU7
+  71 0028 0021     		movs	r1, #0
+  72 002a 0846     		mov	r0, r1
+  73 002c FFF7FEFF 		bl	set_led
+  74              	.LVL5:
+  16:../../lib/sample-lib/sample-lib.c **** 	set_led(LED_GREEN, LED_ON);
+  75              		.loc 1 16 2 view .LVU8
+  76 0030 0121     		movs	r1, #1
+  77 0032 0846     		mov	r0, r1
+  78 0034 FFF7FEFF 		bl	set_led
+  79              	.LVL6:
+  17:../../lib/sample-lib/sample-lib.c **** 	HAL_Delay(BLINK_DURATION / 4);
+  80              		.loc 1 17 2 view .LVU9
+  81 0038 7D20     		movs	r0, #125
+  82 003a FFF7FEFF 		bl	HAL_Delay
+  83              	.LVL7:
+  18:../../lib/sample-lib/sample-lib.c **** 	set_led(LED_GREEN, LED_OFF);
+  84              		.loc 1 18 2 view .LVU10
+  85 003e 0021     		movs	r1, #0
+  86 0040 0120     		movs	r0, #1
+  87 0042 FFF7FEFF 		bl	set_led
+  88              	.LVL8:
+  19:../../lib/sample-lib/sample-lib.c **** 	set_led(LED_BLUE, LED_ON);
+  89              		.loc 1 19 2 view .LVU11
+  90 0046 0121     		movs	r1, #1
+  91 0048 0220     		movs	r0, #2
+  92 004a FFF7FEFF 		bl	set_led
+  93              	.LVL9:
+  20:../../lib/sample-lib/sample-lib.c **** 	HAL_Delay(BLINK_DURATION / 4);
+ARM GAS  /tmp/ccNhq6iA.s 			page 3
+
+
+  94              		.loc 1 20 2 view .LVU12
+  95 004e 7D20     		movs	r0, #125
+  96 0050 FFF7FEFF 		bl	HAL_Delay
+  97              	.LVL10:
+  21:../../lib/sample-lib/sample-lib.c **** 	set_led(LED_BLUE, LED_OFF);
+  98              		.loc 1 21 2 view .LVU13
+  99 0054 0021     		movs	r1, #0
+ 100 0056 0220     		movs	r0, #2
+ 101 0058 FFF7FEFF 		bl	set_led
+ 102              	.LVL11:
+  22:../../lib/sample-lib/sample-lib.c **** }
+ 103              		.loc 1 22 1 is_stmt 0 view .LVU14
+ 104 005c 08BD     		pop	{r3, pc}
+ 105              	.L4:
+ 106 005e 00BF     		.align	2
+ 107              	.L3:
+ 108 0060 00000000 		.word	.LC0
+ 109 0064 0C000000 		.word	.LC1
+ 110              		.cfi_endproc
+ 111              	.LFE953:
+ 113              		.section	.text.hello_world,"ax",%progbits
+ 114              		.align	1
+ 115              		.global	hello_world
+ 116              		.syntax unified
+ 117              		.thumb
+ 118              		.thumb_func
+ 119              		.fpu fpv4-sp-d16
+ 121              	hello_world:
+ 122              	.LFB954:
+  23:../../lib/sample-lib/sample-lib.c **** 
+  24:../../lib/sample-lib/sample-lib.c **** void hello_world() {
+ 123              		.loc 1 24 20 is_stmt 1 view -0
+ 124              		.cfi_startproc
+ 125              		@ Volatile: function does not return.
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128 0000 08B5     		push	{r3, lr}
+ 129              	.LCFI1:
+ 130              		.cfi_def_cfa_offset 8
+ 131              		.cfi_offset 3, -8
+ 132              		.cfi_offset 14, -4
+ 133              	.L6:
+  25:../../lib/sample-lib/sample-lib.c **** 	while (1) {
+ 134              		.loc 1 25 2 discriminator 1 view .LVU16
+  26:../../lib/sample-lib/sample-lib.c **** 		blink();
+ 135              		.loc 1 26 3 discriminator 1 view .LVU17
+ 136 0002 FFF7FEFF 		bl	blink
+ 137              	.LVL12:
+  27:../../lib/sample-lib/sample-lib.c **** 		HAL_Delay(BLINK_DELAY); // IDLE for some time
+ 138              		.loc 1 27 3 discriminator 1 view .LVU18
+ 139 0006 4FF4C870 		mov	r0, #400
+ 140 000a FFF7FEFF 		bl	HAL_Delay
+ 141              	.LVL13:
+  25:../../lib/sample-lib/sample-lib.c **** 	while (1) {
+ 142              		.loc 1 25 8 discriminator 1 view .LVU19
+ 143 000e F8E7     		b	.L6
+ 144              		.cfi_endproc
+ARM GAS  /tmp/ccNhq6iA.s 			page 4
+
+
+ 145              	.LFE954:
+ 147              		.text
+ 148              	.Letext0:
+ 149              		.file 2 "/usr/include/newlib/machine/_default_types.h"
+ 150              		.file 3 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h"
+ 151              		.file 4 "/usr/include/newlib/sys/_types.h"
+ 152              		.file 5 "/usr/include/newlib/sys/reent.h"
+ 153              		.file 6 "/usr/include/newlib/sys/lock.h"
+ 154              		.file 7 "/usr/include/newlib/sys/_stdint.h"
+ 155              		.file 8 "Drivers/CMSIS/Include/core_cm4.h"
+ 156              		.file 9 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/system_stm32wbxx.h"
+ 157              		.file 10 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_def.h"
+ 158              		.file 11 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_flash.h"
+ 159              		.file 12 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h"
+ 160              		.file 13 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
+ 161              		.file 14 "../../lib/led/led.h"
+ 162              		.file 15 "../../lib/log/log.h"
+ARM GAS  /tmp/ccNhq6iA.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 sample-lib.c
+     /tmp/ccNhq6iA.s:18     .rodata.blink.str1.4:0000000000000000 $d
+     /tmp/ccNhq6iA.s:25     .text.blink:0000000000000000 $t
+     /tmp/ccNhq6iA.s:33     .text.blink:0000000000000000 blink
+     /tmp/ccNhq6iA.s:108    .text.blink:0000000000000060 $d
+     /tmp/ccNhq6iA.s:114    .text.hello_world:0000000000000000 $t
+     /tmp/ccNhq6iA.s:121    .text.hello_world:0000000000000000 hello_world
+
+UNDEFINED SYMBOLS
+log_level
+set_led
+HAL_Delay
